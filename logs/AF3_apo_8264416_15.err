@@ -1,0 +1,46 @@
+I0522 15:25:39.250898 22913521549312 folding_input.py:1044] Detected /root/af_input/seq16_apo_May22_2026_3.25PM.json is an AlphaFold 3 JSON since the top-level is not a list.
+I0522 15:25:39.723193 22913521549312 xla_bridge.py:895] Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+I0522 15:25:39.724056 22913521549312 xla_bridge.py:895] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+I0522 15:25:45.119065 22913521549312 pipeline.py:40] Getting protein MSAs for sequence MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND
+I0522 15:25:45.120588 22910496405056 jackhmmer.py:78] Query sequence: MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND
+I0522 15:25:45.120784 22910492202560 jackhmmer.py:78] Query sequence: MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND
+I0522 15:25:45.120886 22910494303808 jackhmmer.py:78] Query sequence: MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND
+I0522 15:25:45.121254 22910490101312 jackhmmer.py:78] Query sequence: MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND
+I0522 15:25:45.122082 22910492202560 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /tmp/local/tmpadpbhiok/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /tmp/local/tmpadpbhiok/query.fasta /root/public_databases/bfd-first_non_consensus_sequences.fasta"
+I0522 15:25:45.122745 22910496405056 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /tmp/local/tmp3q8wlnpo/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /tmp/local/tmp3q8wlnpo/query.fasta /root/public_databases/uniref90_2022_05.fa"
+I0522 15:25:45.123282 22910494303808 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /tmp/local/tmpnt1wmgr3/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /tmp/local/tmpnt1wmgr3/query.fasta /root/public_databases/mgy_clusters_2022_05.fa"
+I0522 15:25:45.124060 22910490101312 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /tmp/local/tmpyun4v1zo/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /tmp/local/tmpyun4v1zo/query.fasta /root/public_databases/uniprot_all_2021_04.fa"
+I0522 15:27:13.691807 22910492202560 subprocess_utils.py:97] Finished Jackhmmer in 88.570 seconds
+I0522 15:33:06.838007 22910496405056 subprocess_utils.py:97] Finished Jackhmmer in 441.715 seconds
+I0522 15:37:23.642327 22910490101312 subprocess_utils.py:97] Finished Jackhmmer in 698.518 seconds
+I0522 15:37:47.866431 22910494303808 subprocess_utils.py:97] Finished Jackhmmer in 722.743 seconds
+I0522 15:37:47.874430 22913521549312 pipeline.py:73] Getting protein MSAs took 722.76 seconds for sequence MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND
+I0522 15:37:47.874502 22913521549312 pipeline.py:79] Deduplicating MSAs and getting protein templates for sequence MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND
+I0522 15:37:47.897207 22910490101312 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/hmmbuild --informat stockholm --hand --amino /tmp/local/tmpgd9keavo/output.hmm /tmp/local/tmpgd9keavo/query.msa"
+I0522 15:37:48.047297 22910490101312 subprocess_utils.py:97] Finished Hmmbuild in 0.150 seconds
+I0522 15:37:48.048740 22910490101312 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/hmmsearch --noali --cpu 8 --F1 0.1 --F2 0.1 --F3 0.1 -E 100 --incE 100 --domE 100 --incdomE 100 -A /tmp/local/tmpv2lw9mm1/output.sto /tmp/local/tmpv2lw9mm1/query.hmm /root/public_databases/pdb_seqres_2022_09_28.fasta"
+I0522 15:37:50.894576 22910490101312 subprocess_utils.py:97] Finished Hmmsearch in 2.846 seconds
+I0522 15:38:29.907341 22913521549312 pipeline.py:108] Deduplicating MSAs and getting protein templates took 42.03 seconds for sequence MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND
+I0522 15:38:29.907537 22913521549312 pipeline.py:115] Filtering protein templates for sequence MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND
+I0522 15:38:29.909431 22913521549312 pipeline.py:124] Filtering protein templates took 0.00 seconds for sequence MALQLSREQGITLRGSAEIVAEFFSFGINSILYQRGIYPSETFTRVQKYGLTLLVTTDLELIKYLNNVVEQLKDWLYKCSVQKLVVVISNIESGEVLERWQFDIECDKTAKDDSAPREKSQKAIQDEIRSVIRQITATVTFLPLLEVSCSFDLLIYTDKDLVVPEKWEESGPQFITNSEEVRLRSFTTTIHKVNSMVAYKIPVND
+I0522 15:38:34.526763 22913521549312 pipeline.py:165] processing seq16, random_seed=679279232
+I0522 15:38:34.543207 22913521549312 pipeline.py:258] Calculating bucket size for input with 205 tokens.
+I0522 15:38:34.543323 22913521549312 pipeline.py:264] Got bucket size 256 for input with 205 tokens, resulting in 51 padded tokens.
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:528: RuntimeWarning: Mean of empty slice
+  xchain = np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:528: RuntimeWarning: Mean of empty slice
+  xchain = np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:554: RuntimeWarning: Mean of empty slice
+  return np.nanmean(np.stack([xchain_row_agg, xchain_col_agg], axis=0), axis=0)

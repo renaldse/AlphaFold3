@@ -1,0 +1,46 @@
+I0522 18:04:50.724409 22533206511616 folding_input.py:1044] Detected /root/af_input/seq15_apo_May22_2026_6.04PM.json is an AlphaFold 3 JSON since the top-level is not a list.
+I0522 18:04:51.642704 22533206511616 xla_bridge.py:895] Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+I0522 18:04:51.658039 22533206511616 xla_bridge.py:895] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+I0522 18:04:57.268436 22533206511616 pipeline.py:40] Getting protein MSAs for sequence MSPRKTYILKLYVAGNTPNSVRALKTLKNILEVEFQGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPLPVRRIIGDLSDREKVLIGLDLLYGELQDSDDF
+I0522 18:04:57.270567 22528464512576 jackhmmer.py:78] Query sequence: MSPRKTYILKLYVAGNTPNSVRALKTLKNILEVEFQGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPLPVRRIIGDLSDREKVLIGLDLLYGELQDSDDF
+I0522 18:04:57.270952 22528462411328 jackhmmer.py:78] Query sequence: MSPRKTYILKLYVAGNTPNSVRALKTLKNILEVEFQGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPLPVRRIIGDLSDREKVLIGLDLLYGELQDSDDF
+I0522 18:04:57.271075 22528460310080 jackhmmer.py:78] Query sequence: MSPRKTYILKLYVAGNTPNSVRALKTLKNILEVEFQGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPLPVRRIIGDLSDREKVLIGLDLLYGELQDSDDF
+I0522 18:04:57.271392 22528458208832 jackhmmer.py:78] Query sequence: MSPRKTYILKLYVAGNTPNSVRALKTLKNILEVEFQGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPLPVRRIIGDLSDREKVLIGLDLLYGELQDSDDF
+I0522 18:04:57.272215 22528464512576 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /tmp/local/tmpc5ztxgxn/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /tmp/local/tmpc5ztxgxn/query.fasta /root/public_databases/uniref90_2022_05.fa"
+I0522 18:04:57.272784 22528460310080 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /tmp/local/tmpza6wdcvo/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /tmp/local/tmpza6wdcvo/query.fasta /root/public_databases/bfd-first_non_consensus_sequences.fasta"
+I0522 18:04:57.273833 22528462411328 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /tmp/local/tmpjs2z0y4u/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /tmp/local/tmpjs2z0y4u/query.fasta /root/public_databases/mgy_clusters_2022_05.fa"
+I0522 18:04:57.274388 22528458208832 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/jackhmmer -o /dev/null -A /tmp/local/tmpisbrw1jv/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --cpu 8 -N 1 -E 0.0001 --incE 0.0001 /tmp/local/tmpisbrw1jv/query.fasta /root/public_databases/uniprot_all_2021_04.fa"
+I0522 18:06:18.806330 22528460310080 subprocess_utils.py:97] Finished Jackhmmer in 81.533 seconds
+I0522 18:12:02.643660 22528464512576 subprocess_utils.py:97] Finished Jackhmmer in 425.371 seconds
+I0522 18:16:26.374133 22528458208832 subprocess_utils.py:97] Finished Jackhmmer in 689.100 seconds
+I0522 18:16:57.375008 22528462411328 subprocess_utils.py:97] Finished Jackhmmer in 720.101 seconds
+I0522 18:16:57.397457 22533206511616 pipeline.py:73] Getting protein MSAs took 720.13 seconds for sequence MSPRKTYILKLYVAGNTPNSVRALKTLKNILEVEFQGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPLPVRRIIGDLSDREKVLIGLDLLYGELQDSDDF
+I0522 18:16:57.397539 22533206511616 pipeline.py:79] Deduplicating MSAs and getting protein templates for sequence MSPRKTYILKLYVAGNTPNSVRALKTLKNILEVEFQGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPLPVRRIIGDLSDREKVLIGLDLLYGELQDSDDF
+I0522 18:16:57.417598 22528458208832 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/hmmbuild --informat stockholm --hand --amino /tmp/local/tmp865ilx9i/output.hmm /tmp/local/tmp865ilx9i/query.msa"
+I0522 18:16:57.496840 22528458208832 subprocess_utils.py:97] Finished Hmmbuild in 0.079 seconds
+I0522 18:16:57.498449 22528458208832 subprocess_utils.py:68] Launching subprocess "/hmmer/bin/hmmsearch --noali --cpu 8 --F1 0.1 --F2 0.1 --F3 0.1 -E 100 --incE 100 --domE 100 --incdomE 100 -A /tmp/local/tmpk01ypvk2/output.sto /tmp/local/tmpk01ypvk2/query.hmm /root/public_databases/pdb_seqres_2022_09_28.fasta"
+I0522 18:16:59.610690 22528458208832 subprocess_utils.py:97] Finished Hmmsearch in 2.112 seconds
+I0522 18:17:24.795768 22533206511616 pipeline.py:108] Deduplicating MSAs and getting protein templates took 27.40 seconds for sequence MSPRKTYILKLYVAGNTPNSVRALKTLKNILEVEFQGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPLPVRRIIGDLSDREKVLIGLDLLYGELQDSDDF
+I0522 18:17:24.796029 22533206511616 pipeline.py:115] Filtering protein templates for sequence MSPRKTYILKLYVAGNTPNSVRALKTLKNILEVEFQGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPLPVRRIIGDLSDREKVLIGLDLLYGELQDSDDF
+I0522 18:17:24.797044 22533206511616 pipeline.py:124] Filtering protein templates took 0.00 seconds for sequence MSPRKTYILKLYVAGNTPNSVRALKTLKNILEVEFQGVYALKVIDVLKNPQLAEEDKILATPTLAKVLPLPVRRIIGDLSDREKVLIGLDLLYGELQDSDDF
+I0522 18:17:29.295103 22533206511616 pipeline.py:165] processing seq15, random_seed=829795272
+I0522 18:17:29.305966 22533206511616 pipeline.py:258] Calculating bucket size for input with 102 tokens.
+I0522 18:17:29.306086 22533206511616 pipeline.py:264] Got bucket size 256 for input with 102 tokens, resulting in 154 padded tokens.
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:528: RuntimeWarning: Mean of empty slice
+  xchain = np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:528: RuntimeWarning: Mean of empty slice
+  xchain = np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:337: RuntimeWarning: invalid value encountered in divide
+  return np.nanmean(value * mask_with_nan, axis=axis) / np.nanmean(
+/alphafold3_venv/lib/python3.11/site-packages/alphafold3/model/confidences.py:554: RuntimeWarning: Mean of empty slice
+  return np.nanmean(np.stack([xchain_row_agg, xchain_col_agg], axis=0), axis=0)

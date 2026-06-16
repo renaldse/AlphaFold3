@@ -1,0 +1,1950 @@
+
+============================================================
+  Approach A | Sequence: SEQ1 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 2.707 Å
+    tmpl 0 vs 2: 2.755 Å
+    tmpl 0 vs 3: 2.704 Å
+    tmpl 0 vs 4: 2.309 Å
+    tmpl 0 vs 5: 2.210 Å
+    tmpl 0 vs 6: 2.668 Å
+    tmpl 0 vs 7: 2.201 Å
+    tmpl 0 vs 8: 2.981 Å
+    tmpl 0 vs 9: 2.982 Å
+    tmpl 1 vs 2: 3.189 Å
+    tmpl 1 vs 3: 2.928 Å
+    tmpl 1 vs 4: 2.805 Å
+    tmpl 1 vs 5: 2.641 Å
+    tmpl 1 vs 6: 2.597 Å
+    tmpl 1 vs 7: 2.670 Å
+    tmpl 1 vs 8: 3.277 Å
+    tmpl 1 vs 9: 3.208 Å
+    tmpl 2 vs 3: 3.073 Å
+    tmpl 2 vs 4: 2.895 Å
+    tmpl 2 vs 5: 2.776 Å
+    tmpl 2 vs 6: 3.219 Å
+    tmpl 2 vs 7: 2.910 Å
+    tmpl 2 vs 8: 3.472 Å
+    tmpl 2 vs 9: 3.528 Å
+    tmpl 3 vs 4: 2.898 Å
+    tmpl 3 vs 5: 2.557 Å
+    tmpl 3 vs 6: 2.898 Å
+    tmpl 3 vs 7: 2.787 Å
+    tmpl 3 vs 8: 3.361 Å
+    tmpl 3 vs 9: 3.548 Å
+    tmpl 4 vs 5: 2.364 Å
+    tmpl 4 vs 6: 2.581 Å
+    tmpl 4 vs 7: 2.142 Å
+    tmpl 4 vs 8: 2.701 Å
+    tmpl 4 vs 9: 2.705 Å
+    tmpl 5 vs 6: 2.625 Å
+    tmpl 5 vs 7: 2.175 Å
+    tmpl 5 vs 8: 2.824 Å
+    tmpl 5 vs 9: 3.003 Å
+    tmpl 6 vs 7: 2.579 Å
+    tmpl 6 vs 8: 2.756 Å
+    tmpl 6 vs 9: 3.248 Å
+    tmpl 7 vs 8: 2.913 Å
+    tmpl 7 vs 9: 2.825 Å
+    tmpl 8 vs 9: 3.483 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 0.588 Å  (1 pairs)
+    cluster 0 vs 1: 1.458 Å  (4 pairs)
+    cluster 0 vs 2: 0.739 Å  (4 pairs)
+    cluster 0 vs 3: 0.808 Å  (4 pairs)
+    cluster 0 vs 4: 0.587 Å  (4 pairs)
+    cluster 0 vs 5: 0.541 Å  (4 pairs)
+    cluster 0 vs 6: 1.024 Å  (4 pairs)
+    cluster 0 vs 7: 0.914 Å  (4 pairs)
+    cluster 0 vs 8: 0.846 Å  (4 pairs)
+    cluster 0 vs 9: 0.634 Å  (4 pairs)
+    cluster 1 vs 1: 0.523 Å  (1 pairs)
+    cluster 1 vs 2: 1.360 Å  (4 pairs)
+    cluster 1 vs 3: 1.573 Å  (4 pairs)
+    cluster 1 vs 4: 1.442 Å  (4 pairs)
+    cluster 1 vs 5: 1.479 Å  (4 pairs)
+    cluster 1 vs 6: 1.424 Å  (4 pairs)
+    cluster 1 vs 7: 1.588 Å  (4 pairs)
+    cluster 1 vs 8: 1.528 Å  (4 pairs)
+    cluster 1 vs 9: 1.469 Å  (4 pairs)
+    cluster 2 vs 2: 0.833 Å  (1 pairs)
+    cluster 2 vs 3: 0.907 Å  (4 pairs)
+    cluster 2 vs 4: 0.715 Å  (4 pairs)
+    cluster 2 vs 5: 0.742 Å  (4 pairs)
+    cluster 2 vs 6: 1.001 Å  (4 pairs)
+    cluster 2 vs 7: 1.019 Å  (4 pairs)
+    cluster 2 vs 8: 0.964 Å  (4 pairs)
+    cluster 2 vs 9: 0.697 Å  (4 pairs)
+    cluster 3 vs 3: 0.518 Å  (1 pairs)
+    cluster 3 vs 4: 0.789 Å  (4 pairs)
+    cluster 3 vs 5: 0.794 Å  (4 pairs)
+    cluster 3 vs 6: 0.957 Å  (4 pairs)
+    cluster 3 vs 7: 0.882 Å  (4 pairs)
+    cluster 3 vs 8: 0.765 Å  (4 pairs)
+    cluster 3 vs 9: 0.835 Å  (4 pairs)
+    cluster 4 vs 4: 0.428 Å  (1 pairs)
+    cluster 4 vs 5: 0.535 Å  (4 pairs)
+    cluster 4 vs 6: 1.066 Å  (4 pairs)
+    cluster 4 vs 7: 0.888 Å  (4 pairs)
+    cluster 4 vs 8: 0.875 Å  (4 pairs)
+    cluster 4 vs 9: 0.566 Å  (4 pairs)
+    cluster 5 vs 5: 0.387 Å  (1 pairs)
+    cluster 5 vs 6: 1.036 Å  (4 pairs)
+    cluster 5 vs 7: 0.871 Å  (4 pairs)
+    cluster 5 vs 8: 0.859 Å  (4 pairs)
+    cluster 5 vs 9: 0.602 Å  (4 pairs)
+    cluster 6 vs 6: 0.572 Å  (1 pairs)
+    cluster 6 vs 7: 1.034 Å  (4 pairs)
+    cluster 6 vs 8: 0.891 Å  (4 pairs)
+    cluster 6 vs 9: 1.120 Å  (4 pairs)
+    cluster 7 vs 7: 0.697 Å  (1 pairs)
+    cluster 7 vs 8: 0.905 Å  (4 pairs)
+    cluster 7 vs 9: 0.936 Å  (4 pairs)
+    cluster 8 vs 8: 0.823 Å  (1 pairs)
+    cluster 8 vs 9: 0.901 Å  (4 pairs)
+    cluster 9 vs 9: 0.473 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = 0.1378   p = 0.3830
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq1_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq1_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ2 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 2.299 Å
+    tmpl 0 vs 2: 2.107 Å
+    tmpl 0 vs 3: 2.248 Å
+    tmpl 0 vs 4: 2.355 Å
+    tmpl 0 vs 5: 2.192 Å
+    tmpl 0 vs 6: 2.217 Å
+    tmpl 0 vs 7: 2.466 Å
+    tmpl 0 vs 8: 2.305 Å
+    tmpl 0 vs 9: 2.632 Å
+    tmpl 1 vs 2: 2.102 Å
+    tmpl 1 vs 3: 2.242 Å
+    tmpl 1 vs 4: 2.253 Å
+    tmpl 1 vs 5: 2.235 Å
+    tmpl 1 vs 6: 2.460 Å
+    tmpl 1 vs 7: 2.191 Å
+    tmpl 1 vs 8: 2.530 Å
+    tmpl 1 vs 9: 2.893 Å
+    tmpl 2 vs 3: 1.937 Å
+    tmpl 2 vs 4: 1.821 Å
+    tmpl 2 vs 5: 1.750 Å
+    tmpl 2 vs 6: 1.903 Å
+    tmpl 2 vs 7: 2.026 Å
+    tmpl 2 vs 8: 2.088 Å
+    tmpl 2 vs 9: 2.545 Å
+    tmpl 3 vs 4: 2.148 Å
+    tmpl 3 vs 5: 2.039 Å
+    tmpl 3 vs 6: 2.130 Å
+    tmpl 3 vs 7: 1.941 Å
+    tmpl 3 vs 8: 2.413 Å
+    tmpl 3 vs 9: 2.797 Å
+    tmpl 4 vs 5: 2.081 Å
+    tmpl 4 vs 6: 1.864 Å
+    tmpl 4 vs 7: 2.064 Å
+    tmpl 4 vs 8: 2.048 Å
+    tmpl 4 vs 9: 2.509 Å
+    tmpl 5 vs 6: 1.868 Å
+    tmpl 5 vs 7: 2.056 Å
+    tmpl 5 vs 8: 2.055 Å
+    tmpl 5 vs 9: 2.458 Å
+    tmpl 6 vs 7: 1.949 Å
+    tmpl 6 vs 8: 2.048 Å
+    tmpl 6 vs 9: 2.481 Å
+    tmpl 7 vs 8: 2.206 Å
+    tmpl 7 vs 9: 2.709 Å
+    tmpl 8 vs 9: 2.415 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 0.564 Å  (1 pairs)
+    cluster 0 vs 1: 0.617 Å  (4 pairs)
+    cluster 0 vs 2: 0.660 Å  (4 pairs)
+    cluster 0 vs 3: 0.694 Å  (4 pairs)
+    cluster 0 vs 4: 0.634 Å  (4 pairs)
+    cluster 0 vs 5: 0.679 Å  (4 pairs)
+    cluster 0 vs 6: 0.694 Å  (4 pairs)
+    cluster 0 vs 7: 0.613 Å  (4 pairs)
+    cluster 0 vs 8: 0.664 Å  (4 pairs)
+    cluster 0 vs 9: 0.656 Å  (4 pairs)
+    cluster 1 vs 1: 0.595 Å  (1 pairs)
+    cluster 1 vs 2: 0.568 Å  (4 pairs)
+    cluster 1 vs 3: 0.646 Å  (4 pairs)
+    cluster 1 vs 4: 0.587 Å  (4 pairs)
+    cluster 1 vs 5: 0.680 Å  (4 pairs)
+    cluster 1 vs 6: 0.628 Å  (4 pairs)
+    cluster 1 vs 7: 0.588 Å  (4 pairs)
+    cluster 1 vs 8: 0.595 Å  (4 pairs)
+    cluster 1 vs 9: 0.623 Å  (4 pairs)
+    cluster 2 vs 2: 0.562 Å  (1 pairs)
+    cluster 2 vs 3: 0.649 Å  (4 pairs)
+    cluster 2 vs 4: 0.609 Å  (4 pairs)
+    cluster 2 vs 5: 0.716 Å  (4 pairs)
+    cluster 2 vs 6: 0.642 Å  (4 pairs)
+    cluster 2 vs 7: 0.704 Å  (4 pairs)
+    cluster 2 vs 8: 0.638 Å  (4 pairs)
+    cluster 2 vs 9: 0.648 Å  (4 pairs)
+    cluster 3 vs 3: 0.676 Å  (1 pairs)
+    cluster 3 vs 4: 0.682 Å  (4 pairs)
+    cluster 3 vs 5: 0.753 Å  (4 pairs)
+    cluster 3 vs 6: 0.602 Å  (4 pairs)
+    cluster 3 vs 7: 0.730 Å  (4 pairs)
+    cluster 3 vs 8: 0.659 Å  (4 pairs)
+    cluster 3 vs 9: 0.668 Å  (4 pairs)
+    cluster 4 vs 4: 0.607 Å  (1 pairs)
+    cluster 4 vs 5: 0.726 Å  (4 pairs)
+    cluster 4 vs 6: 0.727 Å  (4 pairs)
+    cluster 4 vs 7: 0.646 Å  (4 pairs)
+    cluster 4 vs 8: 0.640 Å  (4 pairs)
+    cluster 4 vs 9: 0.610 Å  (4 pairs)
+    cluster 5 vs 5: 0.721 Å  (1 pairs)
+    cluster 5 vs 6: 0.700 Å  (4 pairs)
+    cluster 5 vs 7: 0.695 Å  (4 pairs)
+    cluster 5 vs 8: 0.709 Å  (4 pairs)
+    cluster 5 vs 9: 0.698 Å  (4 pairs)
+    cluster 6 vs 6: 0.653 Å  (1 pairs)
+    cluster 6 vs 7: 0.727 Å  (4 pairs)
+    cluster 6 vs 8: 0.649 Å  (4 pairs)
+    cluster 6 vs 9: 0.663 Å  (4 pairs)
+    cluster 7 vs 7: 0.588 Å  (1 pairs)
+    cluster 7 vs 8: 0.704 Å  (4 pairs)
+    cluster 7 vs 9: 0.654 Å  (4 pairs)
+    cluster 8 vs 8: 0.602 Å  (1 pairs)
+    cluster 8 vs 9: 0.639 Å  (4 pairs)
+    cluster 9 vs 9: 0.728 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = -0.3513   p = 0.9278
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq2_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq2_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ3 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 4.857 Å
+    tmpl 0 vs 2: 6.295 Å
+    tmpl 0 vs 3: 4.698 Å
+    tmpl 0 vs 4: 5.112 Å
+    tmpl 0 vs 5: 6.326 Å
+    tmpl 0 vs 6: 4.833 Å
+    tmpl 0 vs 7: 6.888 Å
+    tmpl 0 vs 8: 7.260 Å
+    tmpl 0 vs 9: 4.893 Å
+    tmpl 1 vs 2: 6.290 Å
+    tmpl 1 vs 3: 4.587 Å
+    tmpl 1 vs 4: 4.481 Å
+    tmpl 1 vs 5: 6.028 Å
+    tmpl 1 vs 6: 5.948 Å
+    tmpl 1 vs 7: 6.630 Å
+    tmpl 1 vs 8: 7.140 Å
+    tmpl 1 vs 9: 4.770 Å
+    tmpl 2 vs 3: 6.464 Å
+    tmpl 2 vs 4: 6.704 Å
+    tmpl 2 vs 5: 7.357 Å
+    tmpl 2 vs 6: 5.392 Å
+    tmpl 2 vs 7: 4.686 Å
+    tmpl 2 vs 8: 7.068 Å
+    tmpl 2 vs 9: 5.690 Å
+    tmpl 3 vs 4: 5.665 Å
+    tmpl 3 vs 5: 6.484 Å
+    tmpl 3 vs 6: 5.522 Å
+    tmpl 3 vs 7: 7.462 Å
+    tmpl 3 vs 8: 6.925 Å
+    tmpl 3 vs 9: 5.584 Å
+    tmpl 4 vs 5: 5.481 Å
+    tmpl 4 vs 6: 6.368 Å
+    tmpl 4 vs 7: 6.838 Å
+    tmpl 4 vs 8: 6.979 Å
+    tmpl 4 vs 9: 5.360 Å
+    tmpl 5 vs 6: 6.561 Å
+    tmpl 5 vs 7: 6.783 Å
+    tmpl 5 vs 8: 8.350 Å
+    tmpl 5 vs 9: 6.496 Å
+    tmpl 6 vs 7: 6.528 Å
+    tmpl 6 vs 8: 7.925 Å
+    tmpl 6 vs 9: 6.495 Å
+    tmpl 7 vs 8: 7.918 Å
+    tmpl 7 vs 9: 5.704 Å
+    tmpl 8 vs 9: 7.671 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 2.627 Å  (1 pairs)
+    cluster 0 vs 1: 4.839 Å  (4 pairs)
+    cluster 0 vs 2: 4.178 Å  (4 pairs)
+    cluster 0 vs 3: 4.746 Å  (4 pairs)
+    cluster 0 vs 4: 5.211 Å  (4 pairs)
+    cluster 0 vs 5: 3.183 Å  (4 pairs)
+    cluster 0 vs 6: 2.968 Å  (4 pairs)
+    cluster 0 vs 7: 3.859 Å  (4 pairs)
+    cluster 0 vs 8: 5.360 Å  (4 pairs)
+    cluster 0 vs 9: 4.010 Å  (4 pairs)
+    cluster 1 vs 1: 2.758 Å  (1 pairs)
+    cluster 1 vs 2: 3.810 Å  (4 pairs)
+    cluster 1 vs 3: 4.412 Å  (4 pairs)
+    cluster 1 vs 4: 3.892 Å  (4 pairs)
+    cluster 1 vs 5: 4.985 Å  (4 pairs)
+    cluster 1 vs 6: 6.398 Å  (4 pairs)
+    cluster 1 vs 7: 4.529 Å  (4 pairs)
+    cluster 1 vs 8: 4.961 Å  (4 pairs)
+    cluster 1 vs 9: 3.910 Å  (4 pairs)
+    cluster 2 vs 2: 5.001 Å  (1 pairs)
+    cluster 2 vs 3: 4.721 Å  (4 pairs)
+    cluster 2 vs 4: 4.562 Å  (4 pairs)
+    cluster 2 vs 5: 4.908 Å  (4 pairs)
+    cluster 2 vs 6: 5.734 Å  (4 pairs)
+    cluster 2 vs 7: 4.222 Å  (4 pairs)
+    cluster 2 vs 8: 5.201 Å  (4 pairs)
+    cluster 2 vs 9: 3.786 Å  (4 pairs)
+    cluster 3 vs 3: 2.807 Å  (1 pairs)
+    cluster 3 vs 4: 4.793 Å  (4 pairs)
+    cluster 3 vs 5: 5.443 Å  (4 pairs)
+    cluster 3 vs 6: 6.455 Å  (4 pairs)
+    cluster 3 vs 7: 5.415 Å  (4 pairs)
+    cluster 3 vs 8: 5.034 Å  (4 pairs)
+    cluster 3 vs 9: 5.031 Å  (4 pairs)
+    cluster 4 vs 4: 5.473 Å  (1 pairs)
+    cluster 4 vs 5: 5.334 Å  (4 pairs)
+    cluster 4 vs 6: 6.651 Å  (4 pairs)
+    cluster 4 vs 7: 5.085 Å  (4 pairs)
+    cluster 4 vs 8: 5.463 Å  (4 pairs)
+    cluster 4 vs 9: 4.533 Å  (4 pairs)
+    cluster 5 vs 5: 4.748 Å  (1 pairs)
+    cluster 5 vs 6: 3.709 Å  (4 pairs)
+    cluster 5 vs 7: 4.561 Å  (4 pairs)
+    cluster 5 vs 8: 5.790 Å  (4 pairs)
+    cluster 5 vs 9: 4.593 Å  (4 pairs)
+    cluster 6 vs 6: 0.771 Å  (1 pairs)
+    cluster 6 vs 7: 4.612 Å  (4 pairs)
+    cluster 6 vs 8: 6.925 Å  (4 pairs)
+    cluster 6 vs 9: 5.711 Å  (4 pairs)
+    cluster 7 vs 7: 6.274 Å  (1 pairs)
+    cluster 7 vs 8: 5.905 Å  (4 pairs)
+    cluster 7 vs 9: 4.346 Å  (4 pairs)
+    cluster 8 vs 8: 6.760 Å  (1 pairs)
+    cluster 8 vs 9: 5.219 Å  (4 pairs)
+    cluster 9 vs 9: 4.285 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = 0.4066   p = 0.0185
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq3_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq3_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ5 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 2.035 Å
+    tmpl 0 vs 2: 2.013 Å
+    tmpl 0 vs 3: 2.071 Å
+    tmpl 0 vs 4: 4.255 Å
+    tmpl 0 vs 5: 2.340 Å
+    tmpl 0 vs 6: 2.182 Å
+    tmpl 0 vs 7: 2.303 Å
+    tmpl 0 vs 8: 2.114 Å
+    tmpl 0 vs 9: 2.250 Å
+    tmpl 1 vs 2: 1.779 Å
+    tmpl 1 vs 3: 1.811 Å
+    tmpl 1 vs 4: 4.224 Å
+    tmpl 1 vs 5: 2.372 Å
+    tmpl 1 vs 6: 2.239 Å
+    tmpl 1 vs 7: 2.136 Å
+    tmpl 1 vs 8: 1.783 Å
+    tmpl 1 vs 9: 2.378 Å
+    tmpl 2 vs 3: 1.793 Å
+    tmpl 2 vs 4: 4.253 Å
+    tmpl 2 vs 5: 2.182 Å
+    tmpl 2 vs 6: 2.255 Å
+    tmpl 2 vs 7: 1.940 Å
+    tmpl 2 vs 8: 1.813 Å
+    tmpl 2 vs 9: 2.381 Å
+    tmpl 3 vs 4: 4.212 Å
+    tmpl 3 vs 5: 2.304 Å
+    tmpl 3 vs 6: 2.388 Å
+    tmpl 3 vs 7: 2.014 Å
+    tmpl 3 vs 8: 1.948 Å
+    tmpl 3 vs 9: 2.321 Å
+    tmpl 4 vs 5: 4.621 Å
+    tmpl 4 vs 6: 4.685 Å
+    tmpl 4 vs 7: 4.407 Å
+    tmpl 4 vs 8: 4.161 Å
+    tmpl 4 vs 9: 4.119 Å
+    tmpl 5 vs 6: 2.401 Å
+    tmpl 5 vs 7: 2.374 Å
+    tmpl 5 vs 8: 2.411 Å
+    tmpl 5 vs 9: 2.662 Å
+    tmpl 6 vs 7: 2.287 Å
+    tmpl 6 vs 8: 2.374 Å
+    tmpl 6 vs 9: 2.531 Å
+    tmpl 7 vs 8: 2.086 Å
+    tmpl 7 vs 9: 2.476 Å
+    tmpl 8 vs 9: 2.300 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 1.399 Å  (1 pairs)
+    cluster 0 vs 1: 1.274 Å  (4 pairs)
+    cluster 0 vs 2: 1.253 Å  (4 pairs)
+    cluster 0 vs 3: 1.537 Å  (4 pairs)
+    cluster 0 vs 4: 3.140 Å  (4 pairs)
+    cluster 0 vs 5: 1.478 Å  (4 pairs)
+    cluster 0 vs 6: 2.078 Å  (4 pairs)
+    cluster 0 vs 7: 1.417 Å  (4 pairs)
+    cluster 0 vs 8: 1.315 Å  (4 pairs)
+    cluster 0 vs 9: 1.296 Å  (4 pairs)
+    cluster 1 vs 1: 0.475 Å  (1 pairs)
+    cluster 1 vs 2: 0.568 Å  (4 pairs)
+    cluster 1 vs 3: 1.059 Å  (4 pairs)
+    cluster 1 vs 4: 3.285 Å  (4 pairs)
+    cluster 1 vs 5: 1.578 Å  (4 pairs)
+    cluster 1 vs 6: 2.193 Å  (4 pairs)
+    cluster 1 vs 7: 0.877 Å  (4 pairs)
+    cluster 1 vs 8: 0.693 Å  (4 pairs)
+    cluster 1 vs 9: 1.355 Å  (4 pairs)
+    cluster 2 vs 2: 0.439 Å  (1 pairs)
+    cluster 2 vs 3: 1.022 Å  (4 pairs)
+    cluster 2 vs 4: 3.269 Å  (4 pairs)
+    cluster 2 vs 5: 1.519 Å  (4 pairs)
+    cluster 2 vs 6: 2.154 Å  (4 pairs)
+    cluster 2 vs 7: 0.844 Å  (4 pairs)
+    cluster 2 vs 8: 0.632 Å  (4 pairs)
+    cluster 2 vs 9: 1.345 Å  (4 pairs)
+    cluster 3 vs 3: 0.513 Å  (1 pairs)
+    cluster 3 vs 4: 3.322 Å  (4 pairs)
+    cluster 3 vs 5: 1.401 Å  (4 pairs)
+    cluster 3 vs 6: 2.367 Å  (4 pairs)
+    cluster 3 vs 7: 1.137 Å  (4 pairs)
+    cluster 3 vs 8: 1.130 Å  (4 pairs)
+    cluster 3 vs 9: 1.605 Å  (4 pairs)
+    cluster 4 vs 4: 1.590 Å  (1 pairs)
+    cluster 4 vs 5: 3.296 Å  (4 pairs)
+    cluster 4 vs 6: 2.606 Å  (4 pairs)
+    cluster 4 vs 7: 3.238 Å  (4 pairs)
+    cluster 4 vs 8: 3.256 Å  (4 pairs)
+    cluster 4 vs 9: 3.169 Å  (4 pairs)
+    cluster 5 vs 5: 0.792 Å  (1 pairs)
+    cluster 5 vs 6: 2.138 Å  (4 pairs)
+    cluster 5 vs 7: 1.576 Å  (4 pairs)
+    cluster 5 vs 8: 1.575 Å  (4 pairs)
+    cluster 5 vs 9: 1.642 Å  (4 pairs)
+    cluster 6 vs 6: 2.691 Å  (1 pairs)
+    cluster 6 vs 7: 2.271 Å  (4 pairs)
+    cluster 6 vs 8: 2.220 Å  (4 pairs)
+    cluster 6 vs 9: 2.211 Å  (4 pairs)
+    cluster 7 vs 7: 0.468 Å  (1 pairs)
+    cluster 7 vs 8: 0.789 Å  (4 pairs)
+    cluster 7 vs 9: 1.369 Å  (4 pairs)
+    cluster 8 vs 8: 0.468 Å  (1 pairs)
+    cluster 8 vs 9: 1.225 Å  (4 pairs)
+    cluster 9 vs 9: 0.604 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = 0.8898   p = 0.0011
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq5_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq5_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ6 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 28.471 Å
+    tmpl 0 vs 2: 27.023 Å
+    tmpl 0 vs 3: 29.252 Å
+    tmpl 0 vs 4: 28.366 Å
+    tmpl 0 vs 5: 30.271 Å
+    tmpl 0 vs 6: 27.109 Å
+    tmpl 0 vs 7: 30.811 Å
+    tmpl 0 vs 8: 29.680 Å
+    tmpl 0 vs 9: 28.021 Å
+    tmpl 1 vs 2: 25.706 Å
+    tmpl 1 vs 3: 28.036 Å
+    tmpl 1 vs 4: 24.291 Å
+    tmpl 1 vs 5: 24.289 Å
+    tmpl 1 vs 6: 25.823 Å
+    tmpl 1 vs 7: 26.472 Å
+    tmpl 1 vs 8: 26.101 Å
+    tmpl 1 vs 9: 23.524 Å
+    tmpl 2 vs 3: 23.401 Å
+    tmpl 2 vs 4: 26.004 Å
+    tmpl 2 vs 5: 25.690 Å
+    tmpl 2 vs 6: 23.154 Å
+    tmpl 2 vs 7: 23.345 Å
+    tmpl 2 vs 8: 25.522 Å
+    tmpl 2 vs 9: 24.728 Å
+    tmpl 3 vs 4: 26.645 Å
+    tmpl 3 vs 5: 25.815 Å
+    tmpl 3 vs 6: 25.256 Å
+    tmpl 3 vs 7: 22.367 Å
+    tmpl 3 vs 8: 28.510 Å
+    tmpl 3 vs 9: 25.963 Å
+    tmpl 4 vs 5: 25.271 Å
+    tmpl 4 vs 6: 25.745 Å
+    tmpl 4 vs 7: 25.395 Å
+    tmpl 4 vs 8: 25.100 Å
+    tmpl 4 vs 9: 23.301 Å
+    tmpl 5 vs 6: 27.383 Å
+    tmpl 5 vs 7: 22.905 Å
+    tmpl 5 vs 8: 27.651 Å
+    tmpl 5 vs 9: 21.915 Å
+    tmpl 6 vs 7: 25.777 Å
+    tmpl 6 vs 8: 26.627 Å
+    tmpl 6 vs 9: 24.972 Å
+    tmpl 7 vs 8: 26.710 Å
+    tmpl 7 vs 9: 23.306 Å
+    tmpl 8 vs 9: 25.761 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 52.655 Å  (1 pairs)
+    cluster 0 vs 1: 59.194 Å  (4 pairs)
+    cluster 0 vs 2: 56.117 Å  (4 pairs)
+    cluster 0 vs 3: 55.495 Å  (4 pairs)
+    cluster 0 vs 4: 56.995 Å  (4 pairs)
+    cluster 0 vs 5: 52.894 Å  (4 pairs)
+    cluster 0 vs 6: 58.025 Å  (4 pairs)
+    cluster 0 vs 7: 58.484 Å  (4 pairs)
+    cluster 0 vs 8: 54.408 Å  (4 pairs)
+    cluster 0 vs 9: 53.301 Å  (4 pairs)
+    cluster 1 vs 1: 46.447 Å  (1 pairs)
+    cluster 1 vs 2: 55.466 Å  (4 pairs)
+    cluster 1 vs 3: 56.352 Å  (4 pairs)
+    cluster 1 vs 4: 57.163 Å  (4 pairs)
+    cluster 1 vs 5: 55.464 Å  (4 pairs)
+    cluster 1 vs 6: 58.083 Å  (4 pairs)
+    cluster 1 vs 7: 54.482 Å  (4 pairs)
+    cluster 1 vs 8: 56.819 Å  (4 pairs)
+    cluster 1 vs 9: 59.672 Å  (4 pairs)
+    cluster 2 vs 2: 52.498 Å  (1 pairs)
+    cluster 2 vs 3: 56.896 Å  (4 pairs)
+    cluster 2 vs 4: 57.212 Å  (4 pairs)
+    cluster 2 vs 5: 57.395 Å  (4 pairs)
+    cluster 2 vs 6: 59.242 Å  (4 pairs)
+    cluster 2 vs 7: 56.116 Å  (4 pairs)
+    cluster 2 vs 8: 54.643 Å  (4 pairs)
+    cluster 2 vs 9: 56.553 Å  (4 pairs)
+    cluster 3 vs 3: 58.083 Å  (1 pairs)
+    cluster 3 vs 4: 58.697 Å  (4 pairs)
+    cluster 3 vs 5: 53.290 Å  (4 pairs)
+    cluster 3 vs 6: 58.228 Å  (4 pairs)
+    cluster 3 vs 7: 53.918 Å  (4 pairs)
+    cluster 3 vs 8: 55.907 Å  (4 pairs)
+    cluster 3 vs 9: 56.582 Å  (4 pairs)
+    cluster 4 vs 4: 49.033 Å  (1 pairs)
+    cluster 4 vs 5: 53.346 Å  (4 pairs)
+    cluster 4 vs 6: 57.637 Å  (4 pairs)
+    cluster 4 vs 7: 58.476 Å  (4 pairs)
+    cluster 4 vs 8: 54.016 Å  (4 pairs)
+    cluster 4 vs 9: 52.014 Å  (4 pairs)
+    cluster 5 vs 5: 50.615 Å  (1 pairs)
+    cluster 5 vs 6: 58.235 Å  (4 pairs)
+    cluster 5 vs 7: 54.196 Å  (4 pairs)
+    cluster 5 vs 8: 54.454 Å  (4 pairs)
+    cluster 5 vs 9: 53.494 Å  (4 pairs)
+    cluster 6 vs 6: 49.283 Å  (1 pairs)
+    cluster 6 vs 7: 57.484 Å  (4 pairs)
+    cluster 6 vs 8: 59.937 Å  (4 pairs)
+    cluster 6 vs 9: 58.139 Å  (4 pairs)
+    cluster 7 vs 7: 57.555 Å  (1 pairs)
+    cluster 7 vs 8: 57.169 Å  (4 pairs)
+    cluster 7 vs 9: 58.127 Å  (4 pairs)
+    cluster 8 vs 8: 63.624 Å  (1 pairs)
+    cluster 8 vs 9: 51.290 Å  (4 pairs)
+    cluster 9 vs 9: 48.638 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = 0.0466   p = 0.3811
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq6_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq6_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ7 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 10.431 Å
+    tmpl 0 vs 2: 13.737 Å
+    tmpl 0 vs 3: 12.721 Å
+    tmpl 0 vs 4: 15.992 Å
+    tmpl 0 vs 5: 11.297 Å
+    tmpl 0 vs 6: 14.922 Å
+    tmpl 0 vs 7: 15.818 Å
+    tmpl 0 vs 8: 9.484 Å
+    tmpl 0 vs 9: 12.358 Å
+    tmpl 1 vs 2: 10.479 Å
+    tmpl 1 vs 3: 8.645 Å
+    tmpl 1 vs 4: 14.352 Å
+    tmpl 1 vs 5: 13.222 Å
+    tmpl 1 vs 6: 13.101 Å
+    tmpl 1 vs 7: 16.571 Å
+    tmpl 1 vs 8: 8.532 Å
+    tmpl 1 vs 9: 15.074 Å
+    tmpl 2 vs 3: 12.389 Å
+    tmpl 2 vs 4: 19.227 Å
+    tmpl 2 vs 5: 15.425 Å
+    tmpl 2 vs 6: 12.462 Å
+    tmpl 2 vs 7: 13.492 Å
+    tmpl 2 vs 8: 14.904 Å
+    tmpl 2 vs 9: 16.458 Å
+    tmpl 3 vs 4: 13.245 Å
+    tmpl 3 vs 5: 12.411 Å
+    tmpl 3 vs 6: 15.061 Å
+    tmpl 3 vs 7: 17.551 Å
+    tmpl 3 vs 8: 10.007 Å
+    tmpl 3 vs 9: 15.240 Å
+    tmpl 4 vs 5: 17.416 Å
+    tmpl 4 vs 6: 17.563 Å
+    tmpl 4 vs 7: 22.673 Å
+    tmpl 4 vs 8: 14.089 Å
+    tmpl 4 vs 9: 20.153 Å
+    tmpl 5 vs 6: 17.460 Å
+    tmpl 5 vs 7: 15.325 Å
+    tmpl 5 vs 8: 11.372 Å
+    tmpl 5 vs 9: 11.412 Å
+    tmpl 6 vs 7: 17.319 Å
+    tmpl 6 vs 8: 15.662 Å
+    tmpl 6 vs 9: 16.751 Å
+    tmpl 7 vs 8: 17.372 Å
+    tmpl 7 vs 9: 10.086 Å
+    tmpl 8 vs 9: 13.102 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 8.948 Å  (1 pairs)
+    cluster 0 vs 1: 14.109 Å  (4 pairs)
+    cluster 0 vs 2: 5.707 Å  (4 pairs)
+    cluster 0 vs 3: 11.297 Å  (4 pairs)
+    cluster 0 vs 4: 8.517 Å  (4 pairs)
+    cluster 0 vs 5: 8.010 Å  (4 pairs)
+    cluster 0 vs 6: 8.763 Å  (4 pairs)
+    cluster 0 vs 7: 10.963 Å  (4 pairs)
+    cluster 0 vs 8: 9.887 Å  (4 pairs)
+    cluster 0 vs 9: 9.520 Å  (4 pairs)
+    cluster 1 vs 1: 13.103 Å  (1 pairs)
+    cluster 1 vs 2: 12.414 Å  (4 pairs)
+    cluster 1 vs 3: 16.096 Å  (4 pairs)
+    cluster 1 vs 4: 12.230 Å  (4 pairs)
+    cluster 1 vs 5: 10.069 Å  (4 pairs)
+    cluster 1 vs 6: 18.491 Å  (4 pairs)
+    cluster 1 vs 7: 15.944 Å  (4 pairs)
+    cluster 1 vs 8: 13.558 Å  (4 pairs)
+    cluster 1 vs 9: 15.411 Å  (4 pairs)
+    cluster 2 vs 2: 4.955 Å  (1 pairs)
+    cluster 2 vs 3: 11.611 Å  (4 pairs)
+    cluster 2 vs 4: 6.664 Å  (4 pairs)
+    cluster 2 vs 5: 5.838 Å  (4 pairs)
+    cluster 2 vs 6: 11.058 Å  (4 pairs)
+    cluster 2 vs 7: 11.310 Å  (4 pairs)
+    cluster 2 vs 8: 9.852 Å  (4 pairs)
+    cluster 2 vs 9: 10.279 Å  (4 pairs)
+    cluster 3 vs 3: 17.401 Å  (1 pairs)
+    cluster 3 vs 4: 11.548 Å  (4 pairs)
+    cluster 3 vs 5: 11.861 Å  (4 pairs)
+    cluster 3 vs 6: 12.047 Å  (4 pairs)
+    cluster 3 vs 7: 12.346 Å  (4 pairs)
+    cluster 3 vs 8: 14.272 Å  (4 pairs)
+    cluster 3 vs 9: 12.930 Å  (4 pairs)
+    cluster 4 vs 4: 11.043 Å  (1 pairs)
+    cluster 4 vs 5: 7.147 Å  (4 pairs)
+    cluster 4 vs 6: 13.616 Å  (4 pairs)
+    cluster 4 vs 7: 12.509 Å  (4 pairs)
+    cluster 4 vs 8: 11.543 Å  (4 pairs)
+    cluster 4 vs 9: 12.789 Å  (4 pairs)
+    cluster 5 vs 5: 4.891 Å  (1 pairs)
+    cluster 5 vs 6: 13.576 Å  (4 pairs)
+    cluster 5 vs 7: 11.779 Å  (4 pairs)
+    cluster 5 vs 8: 9.605 Å  (4 pairs)
+    cluster 5 vs 9: 11.651 Å  (4 pairs)
+    cluster 6 vs 6: 6.613 Å  (1 pairs)
+    cluster 6 vs 7: 10.761 Å  (4 pairs)
+    cluster 6 vs 8: 11.673 Å  (4 pairs)
+    cluster 6 vs 9: 7.583 Å  (4 pairs)
+    cluster 7 vs 7: 16.718 Å  (1 pairs)
+    cluster 7 vs 8: 11.352 Å  (4 pairs)
+    cluster 7 vs 9: 10.621 Å  (4 pairs)
+    cluster 8 vs 8: 8.059 Å  (1 pairs)
+    cluster 8 vs 9: 8.384 Å  (4 pairs)
+    cluster 9 vs 9: 7.132 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = -0.1420   p = 0.7280
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq7_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq7_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ9 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 16.700 Å
+    tmpl 0 vs 2: 13.503 Å
+    tmpl 0 vs 3: 13.453 Å
+    tmpl 0 vs 4: 13.739 Å
+    tmpl 0 vs 5: 15.927 Å
+    tmpl 0 vs 6: 16.585 Å
+    tmpl 0 vs 7: 13.247 Å
+    tmpl 0 vs 8: 11.700 Å
+    tmpl 0 vs 9: 16.442 Å
+    tmpl 1 vs 2: 13.502 Å
+    tmpl 1 vs 3: 12.787 Å
+    tmpl 1 vs 4: 17.065 Å
+    tmpl 1 vs 5: 15.648 Å
+    tmpl 1 vs 6: 15.301 Å
+    tmpl 1 vs 7: 15.053 Å
+    tmpl 1 vs 8: 17.340 Å
+    tmpl 1 vs 9: 18.065 Å
+    tmpl 2 vs 3: 11.725 Å
+    tmpl 2 vs 4: 14.758 Å
+    tmpl 2 vs 5: 15.697 Å
+    tmpl 2 vs 6: 13.611 Å
+    tmpl 2 vs 7: 14.219 Å
+    tmpl 2 vs 8: 15.124 Å
+    tmpl 2 vs 9: 16.716 Å
+    tmpl 3 vs 4: 15.850 Å
+    tmpl 3 vs 5: 16.927 Å
+    tmpl 3 vs 6: 13.407 Å
+    tmpl 3 vs 7: 13.829 Å
+    tmpl 3 vs 8: 14.215 Å
+    tmpl 3 vs 9: 18.056 Å
+    tmpl 4 vs 5: 13.087 Å
+    tmpl 4 vs 6: 17.096 Å
+    tmpl 4 vs 7: 16.512 Å
+    tmpl 4 vs 8: 13.144 Å
+    tmpl 4 vs 9: 13.562 Å
+    tmpl 5 vs 6: 14.833 Å
+    tmpl 5 vs 7: 16.288 Å
+    tmpl 5 vs 8: 17.845 Å
+    tmpl 5 vs 9: 10.522 Å
+    tmpl 6 vs 7: 14.228 Å
+    tmpl 6 vs 8: 18.626 Å
+    tmpl 6 vs 9: 18.079 Å
+    tmpl 7 vs 8: 13.600 Å
+    tmpl 7 vs 9: 16.501 Å
+    tmpl 8 vs 9: 17.027 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 14.331 Å  (1 pairs)
+    cluster 0 vs 1: 13.236 Å  (4 pairs)
+    cluster 0 vs 2: 12.669 Å  (4 pairs)
+    cluster 0 vs 3: 13.780 Å  (4 pairs)
+    cluster 0 vs 4: 10.943 Å  (4 pairs)
+    cluster 0 vs 5: 15.195 Å  (4 pairs)
+    cluster 0 vs 6: 13.305 Å  (4 pairs)
+    cluster 0 vs 7: 19.364 Å  (4 pairs)
+    cluster 0 vs 8: 11.868 Å  (4 pairs)
+    cluster 0 vs 9: 11.284 Å  (4 pairs)
+    cluster 1 vs 1: 13.375 Å  (1 pairs)
+    cluster 1 vs 2: 11.199 Å  (4 pairs)
+    cluster 1 vs 3: 12.102 Å  (4 pairs)
+    cluster 1 vs 4: 10.979 Å  (4 pairs)
+    cluster 1 vs 5: 14.614 Å  (4 pairs)
+    cluster 1 vs 6: 11.264 Å  (4 pairs)
+    cluster 1 vs 7: 14.633 Å  (4 pairs)
+    cluster 1 vs 8: 12.220 Å  (4 pairs)
+    cluster 1 vs 9: 12.873 Å  (4 pairs)
+    cluster 2 vs 2: 6.912 Å  (1 pairs)
+    cluster 2 vs 3: 9.783 Å  (4 pairs)
+    cluster 2 vs 4: 8.367 Å  (4 pairs)
+    cluster 2 vs 5: 13.394 Å  (4 pairs)
+    cluster 2 vs 6: 8.717 Å  (4 pairs)
+    cluster 2 vs 7: 16.360 Å  (4 pairs)
+    cluster 2 vs 8: 9.323 Å  (4 pairs)
+    cluster 2 vs 9: 10.896 Å  (4 pairs)
+    cluster 3 vs 3: 12.157 Å  (1 pairs)
+    cluster 3 vs 4: 9.761 Å  (4 pairs)
+    cluster 3 vs 5: 13.921 Å  (4 pairs)
+    cluster 3 vs 6: 11.808 Å  (4 pairs)
+    cluster 3 vs 7: 17.323 Å  (4 pairs)
+    cluster 3 vs 8: 12.120 Å  (4 pairs)
+    cluster 3 vs 9: 12.076 Å  (4 pairs)
+    cluster 4 vs 4: 9.770 Å  (1 pairs)
+    cluster 4 vs 5: 12.172 Å  (4 pairs)
+    cluster 4 vs 6: 9.890 Å  (4 pairs)
+    cluster 4 vs 7: 18.021 Å  (4 pairs)
+    cluster 4 vs 8: 10.033 Å  (4 pairs)
+    cluster 4 vs 9: 8.837 Å  (4 pairs)
+    cluster 5 vs 5: 9.086 Å  (1 pairs)
+    cluster 5 vs 6: 16.575 Å  (4 pairs)
+    cluster 5 vs 7: 17.345 Å  (4 pairs)
+    cluster 5 vs 8: 15.995 Å  (4 pairs)
+    cluster 5 vs 9: 9.473 Å  (4 pairs)
+    cluster 6 vs 6: 6.894 Å  (1 pairs)
+    cluster 6 vs 7: 16.390 Å  (4 pairs)
+    cluster 6 vs 8: 10.989 Å  (4 pairs)
+    cluster 6 vs 9: 13.896 Å  (4 pairs)
+    cluster 7 vs 7: 13.660 Å  (1 pairs)
+    cluster 7 vs 8: 18.191 Å  (4 pairs)
+    cluster 7 vs 9: 18.523 Å  (4 pairs)
+    cluster 8 vs 8: 10.994 Å  (1 pairs)
+    cluster 8 vs 9: 11.927 Å  (4 pairs)
+    cluster 9 vs 9: 5.403 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = 0.1365   p = 0.2001
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq9_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq9_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ10 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 20.761 Å
+    tmpl 0 vs 2: 21.502 Å
+    tmpl 0 vs 3: 21.046 Å
+    tmpl 0 vs 4: 25.999 Å
+    tmpl 0 vs 5: 20.468 Å
+    tmpl 0 vs 6: 24.764 Å
+    tmpl 0 vs 7: 16.836 Å
+    tmpl 0 vs 8: 24.726 Å
+    tmpl 0 vs 9: 22.174 Å
+    tmpl 1 vs 2: 23.718 Å
+    tmpl 1 vs 3: 21.907 Å
+    tmpl 1 vs 4: 25.820 Å
+    tmpl 1 vs 5: 21.891 Å
+    tmpl 1 vs 6: 22.785 Å
+    tmpl 1 vs 7: 20.259 Å
+    tmpl 1 vs 8: 27.724 Å
+    tmpl 1 vs 9: 22.506 Å
+    tmpl 2 vs 3: 18.314 Å
+    tmpl 2 vs 4: 16.850 Å
+    tmpl 2 vs 5: 17.804 Å
+    tmpl 2 vs 6: 21.288 Å
+    tmpl 2 vs 7: 22.023 Å
+    tmpl 2 vs 8: 19.021 Å
+    tmpl 2 vs 9: 24.637 Å
+    tmpl 3 vs 4: 22.296 Å
+    tmpl 3 vs 5: 16.516 Å
+    tmpl 3 vs 6: 23.979 Å
+    tmpl 3 vs 7: 22.615 Å
+    tmpl 3 vs 8: 23.987 Å
+    tmpl 3 vs 9: 28.083 Å
+    tmpl 4 vs 5: 24.196 Å
+    tmpl 4 vs 6: 18.363 Å
+    tmpl 4 vs 7: 21.386 Å
+    tmpl 4 vs 8: 16.861 Å
+    tmpl 4 vs 9: 18.000 Å
+    tmpl 5 vs 6: 23.343 Å
+    tmpl 5 vs 7: 23.746 Å
+    tmpl 5 vs 8: 24.653 Å
+    tmpl 5 vs 9: 26.747 Å
+    tmpl 6 vs 7: 23.290 Å
+    tmpl 6 vs 8: 22.880 Å
+    tmpl 6 vs 9: 18.954 Å
+    tmpl 7 vs 8: 22.776 Å
+    tmpl 7 vs 9: 17.484 Å
+    tmpl 8 vs 9: 21.837 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 8.765 Å  (1 pairs)
+    cluster 0 vs 1: 13.488 Å  (4 pairs)
+    cluster 0 vs 2: 26.252 Å  (4 pairs)
+    cluster 0 vs 3: 14.559 Å  (4 pairs)
+    cluster 0 vs 4: 19.821 Å  (4 pairs)
+    cluster 0 vs 5: 21.661 Å  (4 pairs)
+    cluster 0 vs 6: 17.750 Å  (4 pairs)
+    cluster 0 vs 7: 21.354 Å  (4 pairs)
+    cluster 0 vs 8: 26.118 Å  (4 pairs)
+    cluster 0 vs 9: 12.368 Å  (4 pairs)
+    cluster 1 vs 1: 15.670 Å  (1 pairs)
+    cluster 1 vs 2: 26.584 Å  (4 pairs)
+    cluster 1 vs 3: 14.342 Å  (4 pairs)
+    cluster 1 vs 4: 20.777 Å  (4 pairs)
+    cluster 1 vs 5: 20.123 Å  (4 pairs)
+    cluster 1 vs 6: 17.606 Å  (4 pairs)
+    cluster 1 vs 7: 21.580 Å  (4 pairs)
+    cluster 1 vs 8: 26.135 Å  (4 pairs)
+    cluster 1 vs 9: 15.037 Å  (4 pairs)
+    cluster 2 vs 2: 30.511 Å  (1 pairs)
+    cluster 2 vs 3: 26.068 Å  (4 pairs)
+    cluster 2 vs 4: 25.965 Å  (4 pairs)
+    cluster 2 vs 5: 26.906 Å  (4 pairs)
+    cluster 2 vs 6: 25.667 Å  (4 pairs)
+    cluster 2 vs 7: 25.045 Å  (4 pairs)
+    cluster 2 vs 8: 24.128 Å  (4 pairs)
+    cluster 2 vs 9: 26.627 Å  (4 pairs)
+    cluster 3 vs 3: 11.364 Å  (1 pairs)
+    cluster 3 vs 4: 21.058 Å  (4 pairs)
+    cluster 3 vs 5: 20.445 Å  (4 pairs)
+    cluster 3 vs 6: 20.820 Å  (4 pairs)
+    cluster 3 vs 7: 22.462 Å  (4 pairs)
+    cluster 3 vs 8: 25.119 Å  (4 pairs)
+    cluster 3 vs 9: 17.171 Å  (4 pairs)
+    cluster 4 vs 4: 25.610 Å  (1 pairs)
+    cluster 4 vs 5: 18.933 Å  (4 pairs)
+    cluster 4 vs 6: 18.347 Å  (4 pairs)
+    cluster 4 vs 7: 20.459 Å  (4 pairs)
+    cluster 4 vs 8: 22.502 Å  (4 pairs)
+    cluster 4 vs 9: 20.142 Å  (4 pairs)
+    cluster 5 vs 5: 26.914 Å  (1 pairs)
+    cluster 5 vs 6: 19.837 Å  (4 pairs)
+    cluster 5 vs 7: 20.624 Å  (4 pairs)
+    cluster 5 vs 8: 23.189 Å  (4 pairs)
+    cluster 5 vs 9: 21.826 Å  (4 pairs)
+    cluster 6 vs 6: 9.280 Å  (1 pairs)
+    cluster 6 vs 7: 22.235 Å  (4 pairs)
+    cluster 6 vs 8: 24.811 Å  (4 pairs)
+    cluster 6 vs 9: 17.046 Å  (4 pairs)
+    cluster 7 vs 7: 32.035 Å  (1 pairs)
+    cluster 7 vs 8: 22.284 Å  (4 pairs)
+    cluster 7 vs 9: 21.973 Å  (4 pairs)
+    cluster 8 vs 8: 30.095 Å  (1 pairs)
+    cluster 8 vs 9: 25.666 Å  (4 pairs)
+    cluster 9 vs 9: 17.248 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = -0.0286   p = 0.5763
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq10_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq10_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ11 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 15.013 Å
+    tmpl 0 vs 2: 15.762 Å
+    tmpl 0 vs 3: 17.906 Å
+    tmpl 0 vs 4: 17.133 Å
+    tmpl 0 vs 5: 12.848 Å
+    tmpl 0 vs 6: 15.250 Å
+    tmpl 0 vs 7: 12.521 Å
+    tmpl 0 vs 8: 16.114 Å
+    tmpl 0 vs 9: 13.127 Å
+    tmpl 1 vs 2: 12.301 Å
+    tmpl 1 vs 3: 14.980 Å
+    tmpl 1 vs 4: 18.535 Å
+    tmpl 1 vs 5: 15.965 Å
+    tmpl 1 vs 6: 14.006 Å
+    tmpl 1 vs 7: 15.317 Å
+    tmpl 1 vs 8: 14.096 Å
+    tmpl 1 vs 9: 13.972 Å
+    tmpl 2 vs 3: 16.092 Å
+    tmpl 2 vs 4: 19.253 Å
+    tmpl 2 vs 5: 16.033 Å
+    tmpl 2 vs 6: 12.725 Å
+    tmpl 2 vs 7: 13.680 Å
+    tmpl 2 vs 8: 11.428 Å
+    tmpl 2 vs 9: 15.027 Å
+    tmpl 3 vs 4: 24.667 Å
+    tmpl 3 vs 5: 19.121 Å
+    tmpl 3 vs 6: 13.870 Å
+    tmpl 3 vs 7: 20.363 Å
+    tmpl 3 vs 8: 13.872 Å
+    tmpl 3 vs 9: 15.781 Å
+    tmpl 4 vs 5: 15.379 Å
+    tmpl 4 vs 6: 21.362 Å
+    tmpl 4 vs 7: 15.079 Å
+    tmpl 4 vs 8: 22.196 Å
+    tmpl 4 vs 9: 15.822 Å
+    tmpl 5 vs 6: 17.499 Å
+    tmpl 5 vs 7: 12.897 Å
+    tmpl 5 vs 8: 16.924 Å
+    tmpl 5 vs 9: 13.366 Å
+    tmpl 6 vs 7: 16.304 Å
+    tmpl 6 vs 8: 13.259 Å
+    tmpl 6 vs 9: 13.717 Å
+    tmpl 7 vs 8: 16.209 Å
+    tmpl 7 vs 9: 14.937 Å
+    tmpl 8 vs 9: 15.455 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 7.501 Å  (1 pairs)
+    cluster 0 vs 1: 25.484 Å  (4 pairs)
+    cluster 0 vs 2: 13.231 Å  (4 pairs)
+    cluster 0 vs 3: 20.089 Å  (4 pairs)
+    cluster 0 vs 4: 25.828 Å  (4 pairs)
+    cluster 0 vs 5: 18.115 Å  (4 pairs)
+    cluster 0 vs 6: 18.598 Å  (4 pairs)
+    cluster 0 vs 7: 14.002 Å  (4 pairs)
+    cluster 0 vs 8: 14.127 Å  (4 pairs)
+    cluster 0 vs 9: 17.004 Å  (4 pairs)
+    cluster 1 vs 1: 28.886 Å  (1 pairs)
+    cluster 1 vs 2: 25.560 Å  (4 pairs)
+    cluster 1 vs 3: 22.211 Å  (4 pairs)
+    cluster 1 vs 4: 22.856 Å  (4 pairs)
+    cluster 1 vs 5: 23.983 Å  (4 pairs)
+    cluster 1 vs 6: 24.525 Å  (4 pairs)
+    cluster 1 vs 7: 26.296 Å  (4 pairs)
+    cluster 1 vs 8: 24.939 Å  (4 pairs)
+    cluster 1 vs 9: 26.367 Å  (4 pairs)
+    cluster 2 vs 2: 19.779 Å  (1 pairs)
+    cluster 2 vs 3: 21.324 Å  (4 pairs)
+    cluster 2 vs 4: 28.747 Å  (4 pairs)
+    cluster 2 vs 5: 20.473 Å  (4 pairs)
+    cluster 2 vs 6: 21.662 Å  (4 pairs)
+    cluster 2 vs 7: 16.170 Å  (4 pairs)
+    cluster 2 vs 8: 17.441 Å  (4 pairs)
+    cluster 2 vs 9: 19.440 Å  (4 pairs)
+    cluster 3 vs 3: 21.608 Å  (1 pairs)
+    cluster 3 vs 4: 26.721 Å  (4 pairs)
+    cluster 3 vs 5: 23.479 Å  (4 pairs)
+    cluster 3 vs 6: 23.082 Å  (4 pairs)
+    cluster 3 vs 7: 19.511 Å  (4 pairs)
+    cluster 3 vs 8: 23.180 Å  (4 pairs)
+    cluster 3 vs 9: 22.451 Å  (4 pairs)
+    cluster 4 vs 4: 5.810 Å  (1 pairs)
+    cluster 4 vs 5: 20.878 Å  (4 pairs)
+    cluster 4 vs 6: 19.345 Å  (4 pairs)
+    cluster 4 vs 7: 27.845 Å  (4 pairs)
+    cluster 4 vs 8: 24.748 Å  (4 pairs)
+    cluster 4 vs 9: 29.515 Å  (4 pairs)
+    cluster 5 vs 5: 25.315 Å  (1 pairs)
+    cluster 5 vs 6: 20.555 Å  (4 pairs)
+    cluster 5 vs 7: 22.105 Å  (4 pairs)
+    cluster 5 vs 8: 17.874 Å  (4 pairs)
+    cluster 5 vs 9: 23.048 Å  (4 pairs)
+    cluster 6 vs 6: 28.731 Å  (1 pairs)
+    cluster 6 vs 7: 20.368 Å  (4 pairs)
+    cluster 6 vs 8: 21.761 Å  (4 pairs)
+    cluster 6 vs 9: 25.048 Å  (4 pairs)
+    cluster 7 vs 7: 18.940 Å  (1 pairs)
+    cluster 7 vs 8: 18.990 Å  (4 pairs)
+    cluster 7 vs 9: 20.410 Å  (4 pairs)
+    cluster 8 vs 8: 14.652 Å  (1 pairs)
+    cluster 8 vs 9: 18.715 Å  (4 pairs)
+    cluster 9 vs 9: 25.056 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = 0.1969   p = 0.1753
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq11_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq11_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ12 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 15.925 Å
+    tmpl 0 vs 2: 15.629 Å
+    tmpl 0 vs 3: 13.432 Å
+    tmpl 0 vs 4: 18.336 Å
+    tmpl 0 vs 5: 15.987 Å
+    tmpl 0 vs 6: 21.087 Å
+    tmpl 0 vs 7: 22.780 Å
+    tmpl 0 vs 8: 15.993 Å
+    tmpl 0 vs 9: 15.523 Å
+    tmpl 1 vs 2: 16.948 Å
+    tmpl 1 vs 3: 14.372 Å
+    tmpl 1 vs 4: 14.711 Å
+    tmpl 1 vs 5: 16.036 Å
+    tmpl 1 vs 6: 14.383 Å
+    tmpl 1 vs 7: 20.837 Å
+    tmpl 1 vs 8: 17.407 Å
+    tmpl 1 vs 9: 11.110 Å
+    tmpl 2 vs 3: 14.487 Å
+    tmpl 2 vs 4: 16.337 Å
+    tmpl 2 vs 5: 20.612 Å
+    tmpl 2 vs 6: 17.457 Å
+    tmpl 2 vs 7: 16.786 Å
+    tmpl 2 vs 8: 18.639 Å
+    tmpl 2 vs 9: 16.077 Å
+    tmpl 3 vs 4: 12.353 Å
+    tmpl 3 vs 5: 14.995 Å
+    tmpl 3 vs 6: 18.437 Å
+    tmpl 3 vs 7: 21.685 Å
+    tmpl 3 vs 8: 14.329 Å
+    tmpl 3 vs 9: 14.796 Å
+    tmpl 4 vs 5: 15.826 Å
+    tmpl 4 vs 6: 16.537 Å
+    tmpl 4 vs 7: 18.985 Å
+    tmpl 4 vs 8: 16.123 Å
+    tmpl 4 vs 9: 16.379 Å
+    tmpl 5 vs 6: 21.511 Å
+    tmpl 5 vs 7: 25.675 Å
+    tmpl 5 vs 8: 16.393 Å
+    tmpl 5 vs 9: 14.677 Å
+    tmpl 6 vs 7: 16.663 Å
+    tmpl 6 vs 8: 20.507 Å
+    tmpl 6 vs 9: 15.364 Å
+    tmpl 7 vs 8: 23.131 Å
+    tmpl 7 vs 9: 22.080 Å
+    tmpl 8 vs 9: 17.832 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 25.252 Å  (1 pairs)
+    cluster 0 vs 1: 18.886 Å  (4 pairs)
+    cluster 0 vs 2: 24.683 Å  (4 pairs)
+    cluster 0 vs 3: 22.258 Å  (4 pairs)
+    cluster 0 vs 4: 21.025 Å  (4 pairs)
+    cluster 0 vs 5: 25.525 Å  (4 pairs)
+    cluster 0 vs 6: 18.849 Å  (4 pairs)
+    cluster 0 vs 7: 25.967 Å  (4 pairs)
+    cluster 0 vs 8: 22.956 Å  (4 pairs)
+    cluster 0 vs 9: 19.605 Å  (4 pairs)
+    cluster 1 vs 1: 8.523 Å  (1 pairs)
+    cluster 1 vs 2: 18.282 Å  (4 pairs)
+    cluster 1 vs 3: 20.214 Å  (4 pairs)
+    cluster 1 vs 4: 12.106 Å  (4 pairs)
+    cluster 1 vs 5: 21.485 Å  (4 pairs)
+    cluster 1 vs 6: 20.198 Å  (4 pairs)
+    cluster 1 vs 7: 25.584 Å  (4 pairs)
+    cluster 1 vs 8: 21.840 Å  (4 pairs)
+    cluster 1 vs 9: 20.241 Å  (4 pairs)
+    cluster 2 vs 2: 10.686 Å  (1 pairs)
+    cluster 2 vs 3: 16.394 Å  (4 pairs)
+    cluster 2 vs 4: 16.680 Å  (4 pairs)
+    cluster 2 vs 5: 20.546 Å  (4 pairs)
+    cluster 2 vs 6: 23.065 Å  (4 pairs)
+    cluster 2 vs 7: 23.483 Å  (4 pairs)
+    cluster 2 vs 8: 20.336 Å  (4 pairs)
+    cluster 2 vs 9: 25.817 Å  (4 pairs)
+    cluster 3 vs 3: 6.404 Å  (1 pairs)
+    cluster 3 vs 4: 20.254 Å  (4 pairs)
+    cluster 3 vs 5: 20.752 Å  (4 pairs)
+    cluster 3 vs 6: 19.540 Å  (4 pairs)
+    cluster 3 vs 7: 23.714 Å  (4 pairs)
+    cluster 3 vs 8: 20.072 Å  (4 pairs)
+    cluster 3 vs 9: 21.014 Å  (4 pairs)
+    cluster 4 vs 4: 7.995 Å  (1 pairs)
+    cluster 4 vs 5: 20.576 Å  (4 pairs)
+    cluster 4 vs 6: 20.266 Å  (4 pairs)
+    cluster 4 vs 7: 25.188 Å  (4 pairs)
+    cluster 4 vs 8: 19.405 Å  (4 pairs)
+    cluster 4 vs 9: 22.399 Å  (4 pairs)
+    cluster 5 vs 5: 28.363 Å  (1 pairs)
+    cluster 5 vs 6: 24.382 Å  (4 pairs)
+    cluster 5 vs 7: 24.890 Å  (4 pairs)
+    cluster 5 vs 8: 21.417 Å  (4 pairs)
+    cluster 5 vs 9: 22.525 Å  (4 pairs)
+    cluster 6 vs 6: 19.660 Å  (1 pairs)
+    cluster 6 vs 7: 23.402 Å  (4 pairs)
+    cluster 6 vs 8: 19.178 Å  (4 pairs)
+    cluster 6 vs 9: 17.964 Å  (4 pairs)
+    cluster 7 vs 7: 24.742 Å  (1 pairs)
+    cluster 7 vs 8: 19.424 Å  (4 pairs)
+    cluster 7 vs 9: 27.434 Å  (4 pairs)
+    cluster 8 vs 8: 16.854 Å  (1 pairs)
+    cluster 8 vs 9: 22.578 Å  (4 pairs)
+    cluster 9 vs 9: 18.922 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = 0.3856   p = 0.0297
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq12_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq12_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ13 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 13.909 Å
+    tmpl 0 vs 2: 13.975 Å
+    tmpl 0 vs 3: 14.401 Å
+    tmpl 0 vs 4: 18.844 Å
+    tmpl 0 vs 5: 16.905 Å
+    tmpl 0 vs 6: 15.403 Å
+    tmpl 0 vs 7: 17.862 Å
+    tmpl 0 vs 8: 15.318 Å
+    tmpl 0 vs 9: 12.600 Å
+    tmpl 1 vs 2: 16.599 Å
+    tmpl 1 vs 3: 17.138 Å
+    tmpl 1 vs 4: 15.105 Å
+    tmpl 1 vs 5: 23.150 Å
+    tmpl 1 vs 6: 16.395 Å
+    tmpl 1 vs 7: 23.733 Å
+    tmpl 1 vs 8: 19.190 Å
+    tmpl 1 vs 9: 12.976 Å
+    tmpl 2 vs 3: 16.340 Å
+    tmpl 2 vs 4: 13.907 Å
+    tmpl 2 vs 5: 17.301 Å
+    tmpl 2 vs 6: 12.035 Å
+    tmpl 2 vs 7: 18.089 Å
+    tmpl 2 vs 8: 11.927 Å
+    tmpl 2 vs 9: 12.266 Å
+    tmpl 3 vs 4: 21.697 Å
+    tmpl 3 vs 5: 16.003 Å
+    tmpl 3 vs 6: 20.345 Å
+    tmpl 3 vs 7: 15.474 Å
+    tmpl 3 vs 8: 13.712 Å
+    tmpl 3 vs 9: 18.415 Å
+    tmpl 4 vs 5: 23.726 Å
+    tmpl 4 vs 6: 13.080 Å
+    tmpl 4 vs 7: 23.441 Å
+    tmpl 4 vs 8: 18.772 Å
+    tmpl 4 vs 9: 13.025 Å
+    tmpl 5 vs 6: 19.074 Å
+    tmpl 5 vs 7: 12.408 Å
+    tmpl 5 vs 8: 13.498 Å
+    tmpl 5 vs 9: 18.842 Å
+    tmpl 6 vs 7: 22.447 Å
+    tmpl 6 vs 8: 16.407 Å
+    tmpl 6 vs 9: 12.838 Å
+    tmpl 7 vs 8: 13.941 Å
+    tmpl 7 vs 9: 21.270 Å
+    tmpl 8 vs 9: 14.945 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 12.226 Å  (1 pairs)
+    cluster 0 vs 1: 12.420 Å  (4 pairs)
+    cluster 0 vs 2: 21.671 Å  (4 pairs)
+    cluster 0 vs 3: 19.230 Å  (4 pairs)
+    cluster 0 vs 4: 10.139 Å  (4 pairs)
+    cluster 0 vs 5: 13.898 Å  (4 pairs)
+    cluster 0 vs 6: 14.954 Å  (4 pairs)
+    cluster 0 vs 7: 8.822 Å  (4 pairs)
+    cluster 0 vs 8: 9.933 Å  (4 pairs)
+    cluster 0 vs 9: 13.480 Å  (4 pairs)
+    cluster 1 vs 1: 13.038 Å  (1 pairs)
+    cluster 1 vs 2: 23.860 Å  (4 pairs)
+    cluster 1 vs 3: 23.592 Å  (4 pairs)
+    cluster 1 vs 4: 9.843 Å  (4 pairs)
+    cluster 1 vs 5: 16.691 Å  (4 pairs)
+    cluster 1 vs 6: 16.524 Å  (4 pairs)
+    cluster 1 vs 7: 10.719 Å  (4 pairs)
+    cluster 1 vs 8: 12.459 Å  (4 pairs)
+    cluster 1 vs 9: 14.938 Å  (4 pairs)
+    cluster 2 vs 2: 10.178 Å  (1 pairs)
+    cluster 2 vs 3: 17.787 Å  (4 pairs)
+    cluster 2 vs 4: 21.822 Å  (4 pairs)
+    cluster 2 vs 5: 18.683 Å  (4 pairs)
+    cluster 2 vs 6: 21.443 Å  (4 pairs)
+    cluster 2 vs 7: 21.497 Å  (4 pairs)
+    cluster 2 vs 8: 20.494 Å  (4 pairs)
+    cluster 2 vs 9: 16.810 Å  (4 pairs)
+    cluster 3 vs 3: 15.281 Å  (1 pairs)
+    cluster 3 vs 4: 21.708 Å  (4 pairs)
+    cluster 3 vs 5: 18.980 Å  (4 pairs)
+    cluster 3 vs 6: 22.882 Å  (4 pairs)
+    cluster 3 vs 7: 19.304 Å  (4 pairs)
+    cluster 3 vs 8: 19.305 Å  (4 pairs)
+    cluster 3 vs 9: 21.204 Å  (4 pairs)
+    cluster 4 vs 4: 5.519 Å  (1 pairs)
+    cluster 4 vs 5: 15.457 Å  (4 pairs)
+    cluster 4 vs 6: 18.482 Å  (4 pairs)
+    cluster 4 vs 7: 7.843 Å  (4 pairs)
+    cluster 4 vs 8: 11.322 Å  (4 pairs)
+    cluster 4 vs 9: 12.687 Å  (4 pairs)
+    cluster 5 vs 5: 9.085 Å  (1 pairs)
+    cluster 5 vs 6: 14.042 Å  (4 pairs)
+    cluster 5 vs 7: 13.512 Å  (4 pairs)
+    cluster 5 vs 8: 12.530 Å  (4 pairs)
+    cluster 5 vs 9: 13.523 Å  (4 pairs)
+    cluster 6 vs 6: 10.989 Å  (1 pairs)
+    cluster 6 vs 7: 15.520 Å  (4 pairs)
+    cluster 6 vs 8: 14.057 Å  (4 pairs)
+    cluster 6 vs 9: 16.216 Å  (4 pairs)
+    cluster 7 vs 7: 8.830 Å  (1 pairs)
+    cluster 7 vs 8: 9.552 Å  (4 pairs)
+    cluster 7 vs 9: 12.763 Å  (4 pairs)
+    cluster 8 vs 8: 11.583 Å  (1 pairs)
+    cluster 8 vs 9: 13.524 Å  (4 pairs)
+    cluster 9 vs 9: 11.917 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = -0.1496   p = 0.7900
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq13_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq13_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ14 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 3.474 Å
+    tmpl 0 vs 2: 2.515 Å
+    tmpl 0 vs 3: 4.133 Å
+    tmpl 0 vs 4: 3.583 Å
+    tmpl 0 vs 5: 3.351 Å
+    tmpl 0 vs 6: 3.145 Å
+    tmpl 0 vs 7: 3.374 Å
+    tmpl 0 vs 8: 2.914 Å
+    tmpl 0 vs 9: 3.697 Å
+    tmpl 1 vs 2: 3.864 Å
+    tmpl 1 vs 3: 4.320 Å
+    tmpl 1 vs 4: 4.161 Å
+    tmpl 1 vs 5: 3.642 Å
+    tmpl 1 vs 6: 3.380 Å
+    tmpl 1 vs 7: 3.182 Å
+    tmpl 1 vs 8: 3.597 Å
+    tmpl 1 vs 9: 4.883 Å
+    tmpl 2 vs 3: 4.327 Å
+    tmpl 2 vs 4: 3.429 Å
+    tmpl 2 vs 5: 3.078 Å
+    tmpl 2 vs 6: 3.059 Å
+    tmpl 2 vs 7: 3.597 Å
+    tmpl 2 vs 8: 2.948 Å
+    tmpl 2 vs 9: 3.896 Å
+    tmpl 3 vs 4: 4.134 Å
+    tmpl 3 vs 5: 4.124 Å
+    tmpl 3 vs 6: 4.145 Å
+    tmpl 3 vs 7: 4.223 Å
+    tmpl 3 vs 8: 4.185 Å
+    tmpl 3 vs 9: 3.898 Å
+    tmpl 4 vs 5: 3.073 Å
+    tmpl 4 vs 6: 3.900 Å
+    tmpl 4 vs 7: 3.855 Å
+    tmpl 4 vs 8: 3.437 Å
+    tmpl 4 vs 9: 3.703 Å
+    tmpl 5 vs 6: 3.392 Å
+    tmpl 5 vs 7: 3.604 Å
+    tmpl 5 vs 8: 3.514 Å
+    tmpl 5 vs 9: 4.078 Å
+    tmpl 6 vs 7: 3.393 Å
+    tmpl 6 vs 8: 3.276 Å
+    tmpl 6 vs 9: 4.498 Å
+    tmpl 7 vs 8: 3.302 Å
+    tmpl 7 vs 9: 4.293 Å
+    tmpl 8 vs 9: 3.919 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 0.861 Å  (1 pairs)
+    cluster 0 vs 1: 1.498 Å  (4 pairs)
+    cluster 0 vs 2: 1.149 Å  (4 pairs)
+    cluster 0 vs 3: 1.424 Å  (4 pairs)
+    cluster 0 vs 4: 1.140 Å  (4 pairs)
+    cluster 0 vs 5: 1.322 Å  (4 pairs)
+    cluster 0 vs 6: 1.173 Å  (4 pairs)
+    cluster 0 vs 7: 1.380 Å  (4 pairs)
+    cluster 0 vs 8: 1.289 Å  (4 pairs)
+    cluster 0 vs 9: 0.871 Å  (4 pairs)
+    cluster 1 vs 1: 0.838 Å  (1 pairs)
+    cluster 1 vs 2: 1.757 Å  (4 pairs)
+    cluster 1 vs 3: 1.678 Å  (4 pairs)
+    cluster 1 vs 4: 1.534 Å  (4 pairs)
+    cluster 1 vs 5: 1.446 Å  (4 pairs)
+    cluster 1 vs 6: 1.425 Å  (4 pairs)
+    cluster 1 vs 7: 1.400 Å  (4 pairs)
+    cluster 1 vs 8: 1.566 Å  (4 pairs)
+    cluster 1 vs 9: 1.532 Å  (4 pairs)
+    cluster 2 vs 2: 0.810 Å  (1 pairs)
+    cluster 2 vs 3: 1.603 Å  (4 pairs)
+    cluster 2 vs 4: 1.275 Å  (4 pairs)
+    cluster 2 vs 5: 1.439 Å  (4 pairs)
+    cluster 2 vs 6: 1.250 Å  (4 pairs)
+    cluster 2 vs 7: 1.387 Å  (4 pairs)
+    cluster 2 vs 8: 1.305 Å  (4 pairs)
+    cluster 2 vs 9: 1.156 Å  (4 pairs)
+    cluster 3 vs 3: 1.240 Å  (1 pairs)
+    cluster 3 vs 4: 1.583 Å  (4 pairs)
+    cluster 3 vs 5: 1.508 Å  (4 pairs)
+    cluster 3 vs 6: 1.335 Å  (4 pairs)
+    cluster 3 vs 7: 1.265 Å  (4 pairs)
+    cluster 3 vs 8: 1.698 Å  (4 pairs)
+    cluster 3 vs 9: 1.525 Å  (4 pairs)
+    cluster 4 vs 4: 0.526 Å  (1 pairs)
+    cluster 4 vs 5: 1.289 Å  (4 pairs)
+    cluster 4 vs 6: 1.172 Å  (4 pairs)
+    cluster 4 vs 7: 1.399 Å  (4 pairs)
+    cluster 4 vs 8: 1.379 Å  (4 pairs)
+    cluster 4 vs 9: 1.246 Å  (4 pairs)
+    cluster 5 vs 5: 0.949 Å  (1 pairs)
+    cluster 5 vs 6: 1.077 Å  (4 pairs)
+    cluster 5 vs 7: 1.224 Å  (4 pairs)
+    cluster 5 vs 8: 1.331 Å  (4 pairs)
+    cluster 5 vs 9: 1.365 Å  (4 pairs)
+    cluster 6 vs 6: 0.907 Å  (1 pairs)
+    cluster 6 vs 7: 1.122 Å  (4 pairs)
+    cluster 6 vs 8: 1.432 Å  (4 pairs)
+    cluster 6 vs 9: 1.289 Å  (4 pairs)
+    cluster 7 vs 7: 0.652 Å  (1 pairs)
+    cluster 7 vs 8: 1.346 Å  (4 pairs)
+    cluster 7 vs 9: 1.337 Å  (4 pairs)
+    cluster 8 vs 8: 0.634 Å  (1 pairs)
+    cluster 8 vs 9: 1.170 Å  (4 pairs)
+    cluster 9 vs 9: 0.706 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = 0.3834   p = 0.0519
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq14_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq14_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ15 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 4.038 Å
+    tmpl 0 vs 2: 5.817 Å
+    tmpl 0 vs 3: 6.400 Å
+    tmpl 0 vs 4: 3.950 Å
+    tmpl 0 vs 5: 4.448 Å
+    tmpl 0 vs 6: 3.753 Å
+    tmpl 0 vs 7: 4.426 Å
+    tmpl 0 vs 8: 5.490 Å
+    tmpl 0 vs 9: 4.614 Å
+    tmpl 1 vs 2: 7.278 Å
+    tmpl 1 vs 3: 5.624 Å
+    tmpl 1 vs 4: 4.245 Å
+    tmpl 1 vs 5: 5.558 Å
+    tmpl 1 vs 6: 3.611 Å
+    tmpl 1 vs 7: 4.559 Å
+    tmpl 1 vs 8: 7.324 Å
+    tmpl 1 vs 9: 4.428 Å
+    tmpl 2 vs 3: 6.312 Å
+    tmpl 2 vs 4: 7.625 Å
+    tmpl 2 vs 5: 5.745 Å
+    tmpl 2 vs 6: 7.686 Å
+    tmpl 2 vs 7: 4.868 Å
+    tmpl 2 vs 8: 3.610 Å
+    tmpl 2 vs 9: 7.558 Å
+    tmpl 3 vs 4: 7.254 Å
+    tmpl 3 vs 5: 7.744 Å
+    tmpl 3 vs 6: 7.433 Å
+    tmpl 3 vs 7: 4.499 Å
+    tmpl 3 vs 8: 7.803 Å
+    tmpl 3 vs 9: 5.832 Å
+    tmpl 4 vs 5: 5.848 Å
+    tmpl 4 vs 6: 4.047 Å
+    tmpl 4 vs 7: 5.240 Å
+    tmpl 4 vs 8: 6.934 Å
+    tmpl 4 vs 9: 5.534 Å
+    tmpl 5 vs 6: 4.579 Å
+    tmpl 5 vs 7: 6.044 Å
+    tmpl 5 vs 8: 5.080 Å
+    tmpl 5 vs 9: 4.555 Å
+    tmpl 6 vs 7: 5.890 Å
+    tmpl 6 vs 8: 6.703 Å
+    tmpl 6 vs 9: 4.029 Å
+    tmpl 7 vs 8: 5.943 Å
+    tmpl 7 vs 9: 5.790 Å
+    tmpl 8 vs 9: 7.241 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 2.228 Å  (1 pairs)
+    cluster 0 vs 1: 3.204 Å  (4 pairs)
+    cluster 0 vs 2: 2.289 Å  (4 pairs)
+    cluster 0 vs 3: 5.048 Å  (4 pairs)
+    cluster 0 vs 4: 3.744 Å  (4 pairs)
+    cluster 0 vs 5: 3.348 Å  (4 pairs)
+    cluster 0 vs 6: 4.512 Å  (4 pairs)
+    cluster 0 vs 7: 3.885 Å  (4 pairs)
+    cluster 0 vs 8: 2.737 Å  (4 pairs)
+    cluster 0 vs 9: 3.392 Å  (4 pairs)
+    cluster 1 vs 1: 2.375 Å  (1 pairs)
+    cluster 1 vs 2: 2.299 Å  (4 pairs)
+    cluster 1 vs 3: 4.283 Å  (4 pairs)
+    cluster 1 vs 4: 3.153 Å  (4 pairs)
+    cluster 1 vs 5: 4.615 Å  (4 pairs)
+    cluster 1 vs 6: 4.137 Å  (4 pairs)
+    cluster 1 vs 7: 3.606 Å  (4 pairs)
+    cluster 1 vs 8: 3.688 Å  (4 pairs)
+    cluster 1 vs 9: 2.663 Å  (4 pairs)
+    cluster 2 vs 2: 2.228 Å  (1 pairs)
+    cluster 2 vs 3: 4.527 Å  (4 pairs)
+    cluster 2 vs 4: 3.116 Å  (4 pairs)
+    cluster 2 vs 5: 3.484 Å  (4 pairs)
+    cluster 2 vs 6: 4.369 Å  (4 pairs)
+    cluster 2 vs 7: 3.422 Å  (4 pairs)
+    cluster 2 vs 8: 2.571 Å  (4 pairs)
+    cluster 2 vs 9: 2.872 Å  (4 pairs)
+    cluster 3 vs 3: 5.803 Å  (1 pairs)
+    cluster 3 vs 4: 3.936 Å  (4 pairs)
+    cluster 3 vs 5: 6.430 Å  (4 pairs)
+    cluster 3 vs 6: 4.706 Å  (4 pairs)
+    cluster 3 vs 7: 4.050 Å  (4 pairs)
+    cluster 3 vs 8: 5.180 Å  (4 pairs)
+    cluster 3 vs 9: 4.906 Å  (4 pairs)
+    cluster 4 vs 4: 3.744 Å  (1 pairs)
+    cluster 4 vs 5: 5.223 Å  (4 pairs)
+    cluster 4 vs 6: 4.384 Å  (4 pairs)
+    cluster 4 vs 7: 2.850 Å  (4 pairs)
+    cluster 4 vs 8: 3.721 Å  (4 pairs)
+    cluster 4 vs 9: 4.117 Å  (4 pairs)
+    cluster 5 vs 5: 2.121 Å  (1 pairs)
+    cluster 5 vs 6: 6.037 Å  (4 pairs)
+    cluster 5 vs 7: 5.231 Å  (4 pairs)
+    cluster 5 vs 8: 3.044 Å  (4 pairs)
+    cluster 5 vs 9: 4.700 Å  (4 pairs)
+    cluster 6 vs 6: 4.369 Å  (1 pairs)
+    cluster 6 vs 7: 4.533 Å  (4 pairs)
+    cluster 6 vs 8: 5.199 Å  (4 pairs)
+    cluster 6 vs 9: 4.264 Å  (4 pairs)
+    cluster 7 vs 7: 3.840 Å  (1 pairs)
+    cluster 7 vs 8: 3.689 Å  (4 pairs)
+    cluster 7 vs 9: 4.645 Å  (4 pairs)
+    cluster 8 vs 8: 3.168 Å  (1 pairs)
+    cluster 8 vs 9: 4.365 Å  (4 pairs)
+    cluster 9 vs 9: 2.459 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = 0.2088   p = 0.1406
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq15_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq15_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ16 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 4.072 Å
+    tmpl 0 vs 2: 3.415 Å
+    tmpl 0 vs 3: 3.110 Å
+    tmpl 0 vs 4: 3.897 Å
+    tmpl 0 vs 5: 4.320 Å
+    tmpl 0 vs 6: 4.250 Å
+    tmpl 0 vs 7: 4.002 Å
+    tmpl 0 vs 8: 3.533 Å
+    tmpl 0 vs 9: 4.395 Å
+    tmpl 1 vs 2: 4.214 Å
+    tmpl 1 vs 3: 4.059 Å
+    tmpl 1 vs 4: 5.094 Å
+    tmpl 1 vs 5: 3.678 Å
+    tmpl 1 vs 6: 4.292 Å
+    tmpl 1 vs 7: 4.394 Å
+    tmpl 1 vs 8: 3.913 Å
+    tmpl 1 vs 9: 3.463 Å
+    tmpl 2 vs 3: 3.755 Å
+    tmpl 2 vs 4: 2.784 Å
+    tmpl 2 vs 5: 3.780 Å
+    tmpl 2 vs 6: 2.921 Å
+    tmpl 2 vs 7: 5.056 Å
+    tmpl 2 vs 8: 3.496 Å
+    tmpl 2 vs 9: 5.418 Å
+    tmpl 3 vs 4: 4.318 Å
+    tmpl 3 vs 5: 4.929 Å
+    tmpl 3 vs 6: 4.863 Å
+    tmpl 3 vs 7: 4.966 Å
+    tmpl 3 vs 8: 4.055 Å
+    tmpl 3 vs 9: 4.291 Å
+    tmpl 4 vs 5: 4.754 Å
+    tmpl 4 vs 6: 3.554 Å
+    tmpl 4 vs 7: 5.716 Å
+    tmpl 4 vs 8: 4.097 Å
+    tmpl 4 vs 9: 6.377 Å
+    tmpl 5 vs 6: 3.772 Å
+    tmpl 5 vs 7: 4.900 Å
+    tmpl 5 vs 8: 3.912 Å
+    tmpl 5 vs 9: 4.943 Å
+    tmpl 6 vs 7: 5.574 Å
+    tmpl 6 vs 8: 3.548 Å
+    tmpl 6 vs 9: 5.884 Å
+    tmpl 7 vs 8: 4.419 Å
+    tmpl 7 vs 9: 4.043 Å
+    tmpl 8 vs 9: 4.889 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 3.641 Å  (1 pairs)
+    cluster 0 vs 1: 2.765 Å  (4 pairs)
+    cluster 0 vs 2: 2.632 Å  (4 pairs)
+    cluster 0 vs 3: 2.588 Å  (4 pairs)
+    cluster 0 vs 4: 3.262 Å  (4 pairs)
+    cluster 0 vs 5: 3.128 Å  (4 pairs)
+    cluster 0 vs 6: 2.603 Å  (4 pairs)
+    cluster 0 vs 7: 3.244 Å  (4 pairs)
+    cluster 0 vs 8: 3.356 Å  (4 pairs)
+    cluster 0 vs 9: 3.499 Å  (4 pairs)
+    cluster 1 vs 1: 1.961 Å  (1 pairs)
+    cluster 1 vs 2: 3.076 Å  (4 pairs)
+    cluster 1 vs 3: 2.427 Å  (4 pairs)
+    cluster 1 vs 4: 4.366 Å  (4 pairs)
+    cluster 1 vs 5: 2.191 Å  (4 pairs)
+    cluster 1 vs 6: 2.743 Å  (4 pairs)
+    cluster 1 vs 7: 2.102 Å  (4 pairs)
+    cluster 1 vs 8: 3.347 Å  (4 pairs)
+    cluster 1 vs 9: 2.872 Å  (4 pairs)
+    cluster 2 vs 2: 3.054 Å  (1 pairs)
+    cluster 2 vs 3: 2.746 Å  (4 pairs)
+    cluster 2 vs 4: 2.851 Å  (4 pairs)
+    cluster 2 vs 5: 3.638 Å  (4 pairs)
+    cluster 2 vs 6: 2.756 Å  (4 pairs)
+    cluster 2 vs 7: 3.563 Å  (4 pairs)
+    cluster 2 vs 8: 3.451 Å  (4 pairs)
+    cluster 2 vs 9: 3.524 Å  (4 pairs)
+    cluster 3 vs 3: 3.111 Å  (1 pairs)
+    cluster 3 vs 4: 3.159 Å  (4 pairs)
+    cluster 3 vs 5: 2.630 Å  (4 pairs)
+    cluster 3 vs 6: 2.178 Å  (4 pairs)
+    cluster 3 vs 7: 2.970 Å  (4 pairs)
+    cluster 3 vs 8: 3.035 Å  (4 pairs)
+    cluster 3 vs 9: 3.678 Å  (4 pairs)
+    cluster 4 vs 4: 0.473 Å  (1 pairs)
+    cluster 4 vs 5: 4.530 Å  (4 pairs)
+    cluster 4 vs 6: 3.054 Å  (4 pairs)
+    cluster 4 vs 7: 4.926 Å  (4 pairs)
+    cluster 4 vs 8: 3.536 Å  (4 pairs)
+    cluster 4 vs 9: 5.033 Å  (4 pairs)
+    cluster 5 vs 5: 2.468 Å  (1 pairs)
+    cluster 5 vs 6: 2.801 Å  (4 pairs)
+    cluster 5 vs 7: 2.690 Å  (4 pairs)
+    cluster 5 vs 8: 2.959 Å  (4 pairs)
+    cluster 5 vs 9: 3.687 Å  (4 pairs)
+    cluster 6 vs 6: 2.848 Å  (1 pairs)
+    cluster 6 vs 7: 3.386 Å  (4 pairs)
+    cluster 6 vs 8: 3.060 Å  (4 pairs)
+    cluster 6 vs 9: 4.014 Å  (4 pairs)
+    cluster 7 vs 7: 2.742 Å  (1 pairs)
+    cluster 7 vs 8: 3.735 Å  (4 pairs)
+    cluster 7 vs 9: 2.417 Å  (4 pairs)
+    cluster 8 vs 8: 3.615 Å  (1 pairs)
+    cluster 8 vs 9: 4.267 Å  (4 pairs)
+    cluster 9 vs 9: 1.096 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = 0.5721   p = 0.0011
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq16_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq16_allatom_approachA_results.txt
+  Done.
+
+============================================================
+  Approach A | Sequence: SEQ17 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building template matrix (allatom) ...
+    tmpl 0 vs 1: 6.008 Å
+    tmpl 0 vs 2: 3.565 Å
+    tmpl 0 vs 3: 4.140 Å
+    tmpl 0 vs 4: 3.465 Å
+    tmpl 0 vs 5: 3.857 Å
+    tmpl 0 vs 6: 4.225 Å
+    tmpl 0 vs 7: 3.435 Å
+    tmpl 0 vs 8: 3.364 Å
+    tmpl 0 vs 9: 4.246 Å
+    tmpl 1 vs 2: 5.625 Å
+    tmpl 1 vs 3: 5.080 Å
+    tmpl 1 vs 4: 5.938 Å
+    tmpl 1 vs 5: 6.652 Å
+    tmpl 1 vs 6: 4.802 Å
+    tmpl 1 vs 7: 6.683 Å
+    tmpl 1 vs 8: 5.684 Å
+    tmpl 1 vs 9: 4.850 Å
+    tmpl 2 vs 3: 3.844 Å
+    tmpl 2 vs 4: 2.916 Å
+    tmpl 2 vs 5: 3.943 Å
+    tmpl 2 vs 6: 3.416 Å
+    tmpl 2 vs 7: 3.968 Å
+    tmpl 2 vs 8: 3.524 Å
+    tmpl 2 vs 9: 3.835 Å
+    tmpl 3 vs 4: 3.748 Å
+    tmpl 3 vs 5: 5.006 Å
+    tmpl 3 vs 6: 4.168 Å
+    tmpl 3 vs 7: 4.971 Å
+    tmpl 3 vs 8: 3.599 Å
+    tmpl 3 vs 9: 4.127 Å
+    tmpl 4 vs 5: 4.052 Å
+    tmpl 4 vs 6: 3.645 Å
+    tmpl 4 vs 7: 3.645 Å
+    tmpl 4 vs 8: 3.051 Å
+    tmpl 4 vs 9: 4.045 Å
+    tmpl 5 vs 6: 4.674 Å
+    tmpl 5 vs 7: 4.004 Å
+    tmpl 5 vs 8: 3.829 Å
+    tmpl 5 vs 9: 5.090 Å
+    tmpl 6 vs 7: 4.430 Å
+    tmpl 6 vs 8: 3.988 Å
+    tmpl 6 vs 9: 3.769 Å
+    tmpl 7 vs 8: 3.819 Å
+    tmpl 7 vs 9: 4.875 Å
+    tmpl 8 vs 9: 4.371 Å
+  Building sample matrix A (allatom) ...
+    cluster 0 vs 0: 1.552 Å  (1 pairs)
+    cluster 0 vs 1: 2.011 Å  (4 pairs)
+    cluster 0 vs 2: 1.770 Å  (4 pairs)
+    cluster 0 vs 3: 2.146 Å  (4 pairs)
+    cluster 0 vs 4: 1.767 Å  (4 pairs)
+    cluster 0 vs 5: 1.682 Å  (4 pairs)
+    cluster 0 vs 6: 1.769 Å  (4 pairs)
+    cluster 0 vs 7: 1.654 Å  (4 pairs)
+    cluster 0 vs 8: 1.910 Å  (4 pairs)
+    cluster 0 vs 9: 2.007 Å  (4 pairs)
+    cluster 1 vs 1: 1.268 Å  (1 pairs)
+    cluster 1 vs 2: 1.842 Å  (4 pairs)
+    cluster 1 vs 3: 1.830 Å  (4 pairs)
+    cluster 1 vs 4: 1.935 Å  (4 pairs)
+    cluster 1 vs 5: 1.789 Å  (4 pairs)
+    cluster 1 vs 6: 1.780 Å  (4 pairs)
+    cluster 1 vs 7: 1.878 Å  (4 pairs)
+    cluster 1 vs 8: 1.774 Å  (4 pairs)
+    cluster 1 vs 9: 1.914 Å  (4 pairs)
+    cluster 2 vs 2: 0.992 Å  (1 pairs)
+    cluster 2 vs 3: 1.311 Å  (4 pairs)
+    cluster 2 vs 4: 1.269 Å  (4 pairs)
+    cluster 2 vs 5: 1.377 Å  (4 pairs)
+    cluster 2 vs 6: 1.073 Å  (4 pairs)
+    cluster 2 vs 7: 1.571 Å  (4 pairs)
+    cluster 2 vs 8: 1.569 Å  (4 pairs)
+    cluster 2 vs 9: 1.529 Å  (4 pairs)
+    cluster 3 vs 3: 0.883 Å  (1 pairs)
+    cluster 3 vs 4: 1.463 Å  (4 pairs)
+    cluster 3 vs 5: 1.676 Å  (4 pairs)
+    cluster 3 vs 6: 1.444 Å  (4 pairs)
+    cluster 3 vs 7: 1.885 Å  (4 pairs)
+    cluster 3 vs 8: 1.697 Å  (4 pairs)
+    cluster 3 vs 9: 1.596 Å  (4 pairs)
+    cluster 4 vs 4: 1.202 Å  (1 pairs)
+    cluster 4 vs 5: 1.441 Å  (4 pairs)
+    cluster 4 vs 6: 1.339 Å  (4 pairs)
+    cluster 4 vs 7: 1.628 Å  (4 pairs)
+    cluster 4 vs 8: 1.640 Å  (4 pairs)
+    cluster 4 vs 9: 1.549 Å  (4 pairs)
+    cluster 5 vs 5: 0.938 Å  (1 pairs)
+    cluster 5 vs 6: 1.286 Å  (4 pairs)
+    cluster 5 vs 7: 1.599 Å  (4 pairs)
+    cluster 5 vs 8: 1.517 Å  (4 pairs)
+    cluster 5 vs 9: 1.762 Å  (4 pairs)
+    cluster 6 vs 6: 0.962 Å  (1 pairs)
+    cluster 6 vs 7: 1.683 Å  (4 pairs)
+    cluster 6 vs 8: 1.585 Å  (4 pairs)
+    cluster 6 vs 9: 1.537 Å  (4 pairs)
+    cluster 7 vs 7: 1.248 Å  (1 pairs)
+    cluster 7 vs 8: 1.634 Å  (4 pairs)
+    cluster 7 vs 9: 1.801 Å  (4 pairs)
+    cluster 8 vs 8: 1.089 Å  (1 pairs)
+    cluster 8 vs 9: 1.738 Å  (4 pairs)
+    cluster 9 vs 9: 1.382 Å  (1 pairs)
+
+[4/4] Running Mantel test ...
+
+  r = 0.5101   p = 0.0233
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq17_allatom_approachA.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq17_allatom_approachA_results.txt
+  Done.

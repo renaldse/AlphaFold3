@@ -1,21 +1,21 @@
 #!/bin/bash --login
 #SBATCH --job-name=AF3_apo
-#SBATCH --time=03:00:00
+#SBATCH --time=3:50:00
 #SBATCH --gpus=a100:1
 #SBATCH --constraint=nal
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=64G
-#SBATCH --output=/mnt/gs21/scratch/garlan70/af3/logs/%x_%A_%a.out # CHANGE ME
-#SBATCH --error=/mnt/gs21/scratch/garlan70/af3/logs/%x_%A_%a.err # CHANGE ME
-#SBATCH --array=1-1 # CHANGE ME
+#SBATCH --output=/mnt/gs21/scratch/renaldse/AlphaFold3/logs/%x_%A_%a.out # CHANGE ME
+#SBATCH --error=/mnt/gs21/scratch/renaldse/AlphaFold3/logs/%x_%A_%a.err # CHANGE ME
+#SBATCH --array=2-2 # CHANGE ME
 
 set -euo pipefail
 
 module purge
 
-export AF3_PERSONAL_DIR=/mnt/gs21/scratch/garlan70/af3 # CHANGE ME
+export AF3_PERSONAL_DIR=/mnt/gs21/scratch/renaldse/AlphaFold3 # CHANGE ME
 export AF3_RESOURCES_DIR=/mnt/research/woldring_lab/AlphaFold3 # CHANGE ME
-export AF3_SCRATCH_DIR=/mnt/gs21/scratch/garlan70/af3 # CHANGE ME
+export AF3_SCRATCH_DIR=/mnt/gs21/scratch/renaldse/AlphaFold3 # CHANGE ME
 
 CSV_PATH="${AF3_PERSONAL_DIR}/inputs/af3_apo.csv" # CHANGE ME
 AF3_JSON_TMPLT="${AF3_PERSONAL_DIR}/inputs/af3_apo.json" # CHANGE ME
@@ -30,7 +30,7 @@ export AF3_DATABASES_DIR=/mnt/research/common-data/alphafold/database_3
 mkdir -p "${AF3_INPUT_DIR}" "${AF3_OUTPUT_DIR}" "${AF3_SCRATCH_DIR}/logs" "${AF3_SCRATCH_DIR}/tmp"
 
 # Total structures per run is AF3_NUM_SEEDS x AF3_NUM_SAMPLES_PER_SEED
-AF3_NUM_SEEDS="${AF3_NUM_SEEDS:-1}" # CHANGE ME
+AF3_NUM_SEEDS="${AF3_NUM_SEEDS:-2}" # CHANGE ME
 AF3_NUM_SAMPLES_PER_SEED="${AF3_NUM_SAMPLES_PER_SEED:-5}" # CHANGE ME
 
 # Sanity checks
@@ -259,7 +259,8 @@ PY
 
 IFS=$'\t' read -r pdbid sequence <<< "${row_tsv}"
 
-job_tag="${pdbid}"
+timestamp=$(date +"%b%-d_%Y_%-I.%M%p")
+job_tag="${pdbid}_apo_${timestamp}"
 json_host="${AF3_INPUT_DIR}/${job_tag}.json"
 out_host="${AF3_OUTPUT_DIR}/${job_tag}"
 
@@ -293,15 +294,100 @@ echo "==> writing JSON: ${json_host}"
 make_json "${pdbid}" "${sequence}" "${json_host}" "${AF3_NUM_SEEDS}"
 
 echo "==> running AF3 (expected ${expected} structures) in ${out_host}"
-if run_af3; then
-  exit 0
-fi
 
-if grep -q "KeyError: 'AAA'" "${AF3_STDERR}"; then
+#Old End of Code no ranking
+# if run_af3; then
+ # exit 0
+#fi
+
+#if grep -q "KeyError: 'AAA'" "${AF3_STDERR}"; then
+ # echo "==> [${pdbid}] Detected KeyError 'AAA' during template parsing. Retrying with patched templates.py."
+  #bind_arg="$(make_patched_templates_bind)"
+  #run_af3 "${bind_arg}"
+  #exit $?
+#fi
+
+#exit 1
+
+#Ranking models end
+af3_ok=false
+if run_af3; then
+  af3_ok=true
+elif grep -q "KeyError: 'AAA'" "${AF3_STDERR}"; then
   echo "==> [${pdbid}] Detected KeyError 'AAA' during template parsing. Retrying with patched templates.py."
   bind_arg="$(make_patched_templates_bind)"
-  run_af3 "${bind_arg}"
-  exit $?
+  if run_af3 "${bind_arg}"; then
+    af3_ok=true
+  fi
 fi
 
-exit 1
+if [[ "${af3_ok}" != "true" ]]; then
+  echo "ERROR: AF3 run failed for ${pdbid}" >&2
+  exit 1
+fi
+
+# ============================================================
+# POST-PROCESSING: rank samples by ranking_score per seed dir
+# ============================================================
+echo "==> [${pdbid}] Ranking samples by confidence score (per seed)..."
+
+python3 - "${out_host}" "${pdbid}" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+out_host = Path(sys.argv[1])
+pdbid    = sys.argv[2]
+
+# Find all seed-* directories
+seed_dirs = sorted(d for d in out_host.rglob("seed-*") if d.is_dir())
+# Deduplicate to top-level seed dirs (in case of nested matches)
+seed_dirs = sorted(set(
+    next(p for p in [d] + list(d.parents) if p.name.startswith("seed-") and p.parent == out_host or p.parent.parent == out_host)
+    for d in seed_dirs
+))
+
+if not seed_dirs:
+    print("  ERROR: no seed-* directories found.", flush=True)
+    sys.exit(1)
+
+for seed_dir in seed_dirs:
+    print(f"\n  Processing {seed_dir.name}...", flush=True)
+    candidates = []
+
+    for conf_file in sorted(seed_dir.rglob("*_summary_confidences.json")):
+        sample_dir = conf_file.parent
+        try:
+            with open(conf_file) as f:
+                data = json.load(f)
+            score = float(data["ranking_score"])
+            candidates.append((score, sample_dir))
+        except (KeyError, ValueError, json.JSONDecodeError) as e:
+            print(f"    WARNING: could not read ranking_score from {conf_file}: {e}", flush=True)
+
+    if not candidates:
+        print(f"    WARNING: no samples found in {seed_dir.name}, skipping.", flush=True)
+        continue
+
+    candidates.sort(key=lambda x: x[0], reverse=True)
+
+    print(f"    Found {len(candidates)} samples. Ranking:", flush=True)
+    for rank, (score, sdir) in enumerate(candidates):
+        print(f"      model_{rank}  score={score:.4f}  {sdir.name}", flush=True)
+
+    temp_names = {}
+    for rank, (score, sdir) in enumerate(candidates):
+        tmp = sdir.parent / f"_tmp_model_{rank}_{sdir.name}"
+        sdir.rename(tmp)
+        temp_names[rank] = tmp
+
+    for rank, tmp in temp_names.items():
+        final = tmp.parent / f"model_{rank}"
+        tmp.rename(final)
+        print(f"      Renamed → {final.name}", flush=True)
+
+    print(f"    Done. Best in {seed_dir.name} (model_0) has ranking_score={candidates[0][0]:.4f}", flush=True)
+PY
+
+echo "==> [${pdbid}] Post-processing complete."
+exit 0

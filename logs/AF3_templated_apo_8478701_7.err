@@ -1,0 +1,13 @@
+WARNING: Template residue numbering was in range, but sequence agreement was low (15/180 = 8.3%). Falling back to sequence alignment.
+Template mapping for OATP1B1: used sequence-alignment fallback. Mapped 180 template residues to query length 691. Template residues present in CIF: 180. Sequence agreement at aligned positions: 114/180 = 63.3%.
+I0526 16:26:01.265338 22583399161856 folding_input.py:1044] Detected /root/af_input/OATP1B1_templated_apo_May26_2026_4.25PM.json is an AlphaFold 3 JSON since the top-level is not a list.
+I0526 16:26:02.858952 22583399161856 xla_bridge.py:895] Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+I0526 16:26:02.906236 22583399161856 xla_bridge.py:895] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+I0526 16:26:09.703623 22583399161856 pipeline.py:404] Skipping MSA and template search for protein chain A because it already has MSAs and templates.
+I0526 16:26:16.812823 22583399161856 pipeline.py:165] processing OATP1B1, random_seed=1536018325
+I0526 16:26:16.864858 22583399161856 pipeline.py:258] Calculating bucket size for input with 691 tokens.
+I0526 16:26:16.865017 22583399161856 pipeline.py:264] Got bucket size 768 for input with 691 tokens, resulting in 77 padded tokens.
+I0526 16:26:25.009657 22583399161856 pipeline.py:165] processing OATP1B1, random_seed=1536018326
+I0526 16:26:25.052480 22583399161856 pipeline.py:258] Calculating bucket size for input with 691 tokens.
+I0526 16:26:25.052598 22583399161856 pipeline.py:264] Got bucket size 768 for input with 691 tokens, resulting in 77 padded tokens.
+[2026-05-26T16:26:59.298] error: *** JOB 8480456 ON nal-004 CANCELLED AT 2026-05-26T16:26:59 DUE to SIGNAL Terminated ***

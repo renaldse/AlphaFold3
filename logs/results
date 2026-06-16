@@ -1,0 +1,72 @@
+==> [task 1] pdb_id=ADK
+==> [task 2] pdb_id=OATP1B1
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/ADK_lig-4c021a9d_cofold_May20_2026_9.56AM.json
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/OATP1B1_lig-b9544aa2_cofold_May20_2026_9.56AM.json
+==> running AF3 (expected 2 structures) in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/ADK_lig-4c021a9d_cofold_May20_2026_9.56AM
+==> running AF3 (expected 2 structures) in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/OATP1B1_lig-b9544aa2_cofold_May20_2026_9.56AM
+Running AlphaFold 3. Please note that standard AlphaFold 3 model parameters are
+only available under terms of use provided at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+If you do not agree to these terms and are using AlphaFold 3 derived model
+parameters, cancel execution of AlphaFold 3 inference with CTRL-C, and do not
+use the model parameters.
+Found local devices: [CudaDevice(id=0)]
+Building model from scratch...
+Processing fold inputs.
+Processing fold input #1
+Processing fold input OATP1B1
+Checking we can load the model parameters...
+Running data pipeline...
+Processing chain A
+Processing chain A took 1451.16 seconds
+Processing chain B
+Processing chain B took 0.00 seconds
+Output directory: /root/af_output/OATP1B1_lig-b9544aa2_cofold_May20_2026_9.56AM/oatp1b1
+Writing model input JSON to /root/af_output/OATP1B1_lig-b9544aa2_cofold_May20_2026_9.56AM/oatp1b1
+Predicting 3D structure for OATP1B1 for seed(s) (1536018325,)...
+Featurising data for seeds (1536018325,)...
+Featurising OATP1B1 with rng_seed 1536018325.
+Featurising OATP1B1 with rng_seed 1536018325 took 9.95 seconds.
+Featurising data for seeds (1536018325,) took  16.49 seconds.
+Running model inference for seed 1536018325...
+Running model inference for seed 1536018325 took  71.02 seconds.
+Extracting output structures (one per sample) for seed 1536018325...
+Extracting output structures (one per sample) for seed 1536018325 took  0.93 seconds.
+Running model inference and extracting output structures for seed 1536018325 took  71.96 seconds.
+Running model inference and extracting output structures for seeds (1536018325,) took  71.96 seconds.
+Writing outputs for OATP1B1 for seed(s) (1536018325,)...
+Done processing fold input OATP1B1.
+Done processing 1 fold inputs.
+Running AlphaFold 3. Please note that standard AlphaFold 3 model parameters are
+only available under terms of use provided at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+If you do not agree to these terms and are using AlphaFold 3 derived model
+parameters, cancel execution of AlphaFold 3 inference with CTRL-C, and do not
+use the model parameters.
+Found local devices: [CudaDevice(id=0)]
+Building model from scratch...
+Processing fold inputs.
+Processing fold input #1
+Processing fold input ADK
+Checking we can load the model parameters...
+Running data pipeline...
+Processing chain A
+Processing chain A took 1808.11 seconds
+Processing chain B
+Processing chain B took 0.00 seconds
+Output directory: /root/af_output/ADK_lig-4c021a9d_cofold_May20_2026_9.56AM/adk
+Writing model input JSON to /root/af_output/ADK_lig-4c021a9d_cofold_May20_2026_9.56AM/adk
+Predicting 3D structure for ADK for seed(s) (2063740159,)...
+Featurising data for seeds (2063740159,)...
+Featurising ADK with rng_seed 2063740159.
+Featurising ADK with rng_seed 2063740159 took 4.16 seconds.
+Featurising data for seeds (2063740159,) took  8.88 seconds.
+Running model inference for seed 2063740159...
+Running model inference for seed 2063740159 took  38.71 seconds.
+Extracting output structures (one per sample) for seed 2063740159...
+Extracting output structures (one per sample) for seed 2063740159 took  0.21 seconds.
+Running model inference and extracting output structures for seed 2063740159 took  38.91 seconds.
+Running model inference and extracting output structures for seeds (2063740159,) took  38.91 seconds.
+Writing outputs for ADK for seed(s) (2063740159,)...
+Done processing fold input ADK.
+Done processing 1 fold inputs.

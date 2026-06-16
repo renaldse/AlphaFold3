@@ -1,0 +1,321 @@
+#!/usr/bin/env python3
+import os
+import glob
+import numpy as np
+import pandas as pd
+import importlib
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+import matplotlib
+matplotlib.use('Agg')
+import warnings
+from Bio.PDB import MMCIFParser, Superimposer
+from Bio.PDB.PDBExceptions import PDBConstructionWarning
+try:
+    kendalltau = importlib.import_module("scipy.stats").kendalltau
+except Exception:
+    def kendalltau(x, y):
+        n = len(x)
+        C = D = 0
+        for i in range(n):
+            for j in range(i+1, n):
+                xi, xj = x[i], x[j]
+                yi, yj = y[i], y[j]
+                if (xi - xj) * (yi - yj) > 0:
+                    C += 1
+                elif (xi - xj) * (yi - yj) < 0:
+                    D += 1
+        denom = 0.5 * n * (n - 1)
+        tau = (C - D) / denom if denom != 0 else 0.0
+        return tau, 1.0
+warnings.filterwarnings("ignore", category=PDBConstructionWarning)
+
+BASE     = "/mnt/gs21/scratch/renaldse/AlphaFold3/outputs"
+REF_DIR  = os.path.join(BASE, "seq5_apo_Jun3_2026_9.08AM", "seq5")
+REPR_DIR = "/mnt/gs21/scratch/renaldse/AlphaFold3/inputs/structures/NODES_Proteins"
+OUT_DIR  = "/mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/NODES_proteins_apo/quant"
+
+HEAVY_ATOMS = {"N", "CA", "C", "O", "CB", "CG", "CG1", "CG2", "CD", "CD1",
+               "CD2", "CE", "CE1", "CE2", "CE3", "CZ", "CZ2", "CZ3", "CH2",
+               "ND1", "ND2", "NE", "NE1", "NE2", "NH1", "NH2", "NZ",
+               "OD1", "OD2", "OE1", "OE2", "OG", "OG1", "OH", "SD", "SG"}
+
+def load_structure(path):
+    parser = MMCIFParser(QUIET=True)
+    return parser.get_structure("model", path)
+
+def get_ca_atoms(path):
+    structure = load_structure(path)
+    chain = next(iter(structure[0].get_chains()))
+    return [r["CA"] for r in chain.get_residues() if "CA" in r]
+
+def get_heavy_atoms(path):
+    structure = load_structure(path)
+    chain = next(iter(structure[0].get_chains()))
+    res_atoms = {}
+    for residue in chain.get_residues():
+        resnum = residue.get_id()[1]
+        atoms = [a for a in residue.get_atoms() if a.get_name() in HEAVY_ATOMS]
+        if atoms:
+            res_atoms[resnum] = atoms
+    return res_atoms
+
+def ca_rmsd(ref, mob):
+    n = min(len(ref), len(mob))
+    sup = Superimposer()
+    sup.set_atoms(ref[:n], mob[:n])
+    return round(sup.rms, 3)
+
+def allatom_rmsd(ref_res, mob_res):
+    common = sorted(set(ref_res.keys()) & set(mob_res.keys()))
+    ref_atoms, mob_atoms = [], []
+    for resnum in common:
+        ref_names = {a.get_name(): a for a in ref_res[resnum]}
+        mob_names = {a.get_name(): a for a in mob_res[resnum]}
+        for name in sorted(set(ref_names) & set(mob_names)):
+            ref_atoms.append(ref_names[name])
+            mob_atoms.append(mob_names[name])
+    if len(ref_atoms) < 4:
+        return float("nan")
+    sup = Superimposer()
+    sup.set_atoms(ref_atoms, mob_atoms)
+    return round(sup.rms, 3)
+
+ref_top = glob.glob(os.path.join(REF_DIR, "seq5_model.cif"))
+if ref_top:
+    ref_cif = ref_top[0]
+else:
+    candidates = glob.glob(os.path.join(REF_DIR, "seed-*_sample-*", "*.cif"))
+    candidates = [f for f in candidates if "confidence" not in f.lower()]
+    ref_cif = candidates[0] if candidates else None
+
+if not ref_cif:
+    raise FileNotFoundError(f"No reference .cif found in {REF_DIR}")
+print(f"Reference: {ref_cif}")
+
+ref_ca_atoms = get_ca_atoms(ref_cif)
+ref_heavy    = get_heavy_atoms(ref_cif)
+
+results = []
+
+for cluster_idx in range(10):
+    pattern      = os.path.join(BASE, f"seq5_cluster{cluster_idx}_templated_apo_*")
+    cluster_dirs = sorted(glob.glob(pattern))
+    if not cluster_dirs:
+        print(f"WARNING: No directory found for cluster {cluster_idx}")
+        continue
+    cluster_dir = cluster_dirs[0]
+
+    inner_dir = os.path.join(cluster_dir, f"seq5_cluster{cluster_idx}")
+    if not os.path.isdir(inner_dir):
+        subdirs = [d for d in os.listdir(cluster_dir)
+                   if os.path.isdir(os.path.join(cluster_dir, d))]
+        if not subdirs:
+            print(f"WARNING: No subdirectory in {cluster_dir}")
+            continue
+        inner_dir = os.path.join(cluster_dir, subdirs[0])
+
+    sample_cifs = glob.glob(os.path.join(inner_dir, "seed-*_sample-*", "*.cif"))
+    sample_cifs = [f for f in sample_cifs if "confidence" not in f.lower()]
+
+    if not sample_cifs:
+        print(f"WARNING: No sample cifs found in {inner_dir}")
+        continue
+
+    print(f"Cluster {cluster_idx}: {len(sample_cifs)} samples")
+
+    ca_rmsds, all_rmsds = [], []
+    for scif in sample_cifs:
+        try:
+            mob_ca    = get_ca_atoms(scif)
+            mob_heavy = get_heavy_atoms(scif)
+            ca_val    = ca_rmsd(ref_ca_atoms, mob_ca)
+            aa_val    = allatom_rmsd(ref_heavy, mob_heavy)
+            ca_rmsds.append(ca_val)
+            all_rmsds.append(aa_val)
+            print(f"  {os.path.basename(os.path.dirname(scif))}: CA={ca_val:.3f}  all-atom={aa_val:.3f}")
+        except Exception as e:
+            print(f"  ERROR on {scif}: {e}")
+
+    repr_cif = os.path.join(REPR_DIR, f"seq5_cluster_repr_{cluster_idx}.cif")
+    repr_ca_val, repr_all_val = np.nan, np.nan
+    if os.path.exists(repr_cif):
+        try:
+            repr_ca_val  = ca_rmsd(ref_ca_atoms, get_ca_atoms(repr_cif))
+            repr_all_val = allatom_rmsd(ref_heavy, get_heavy_atoms(repr_cif))
+            print(f"  repr_{cluster_idx}: CA={repr_ca_val:.3f}  all-atom={repr_all_val:.3f}")
+        except Exception as e:
+            print(f"  ERROR on repr {repr_cif}: {e}")
+    else:
+        print(f"  WARNING: repr not found: {repr_cif}")
+
+    results.append({
+        "label":             f"Cluster {cluster_idx}",
+        "ca_rmsd_mean":      np.mean(ca_rmsds),
+        "ca_rmsd_std":       np.std(ca_rmsds),
+        "allatom_rmsd_mean": np.mean(all_rmsds),
+        "allatom_rmsd_std":  np.std(all_rmsds),
+        "repr_ca_rmsd":      repr_ca_val,
+        "repr_all_rmsd":     repr_all_val,
+        "n_samples":         len(ca_rmsds)
+    })
+
+df = pd.DataFrame(results)
+csv_path = os.path.join(OUT_DIR, "seq5_apo_templated_rmsd.csv")
+df.to_csv(csv_path, index=False)
+print(f"\nSaved CSV: {csv_path}")
+print(df.to_string(index=False))
+
+labels = df["label"].tolist()
+x      = np.arange(len(labels))
+width  = 0.35
+
+def add_value_labels(ax, bars, values):
+    for bar, val in zip(bars, values):
+        if np.isnan(val):
+            continue
+        ax.text(bar.get_x() + bar.get_width() / 2,
+                bar.get_height() + 0.1,
+                f"{val:.2f}",
+                ha='center', va='bottom', fontsize=7.5, fontweight='bold')
+
+fig, ax = plt.subplots(figsize=(14, 6))
+bars1 = ax.bar(x - width/2, df["ca_rmsd_mean"], width,
+               yerr=df["ca_rmsd_std"], capsize=4,
+               color="#4878CF", edgecolor="black", linewidth=0.7,
+               label="Templated avg")
+bars2 = ax.bar(x + width/2, df["repr_ca_rmsd"], width,
+               color="#2ecc71", edgecolor="black", linewidth=0.7,
+               label="Original Cluster cif")
+add_value_labels(ax, bars1, df["ca_rmsd_mean"].tolist())
+add_value_labels(ax, bars2, df["repr_ca_rmsd"].tolist())
+ax.set_ylabel("RMSD (Å)", fontsize=12)
+ax.set_title("seq5 Cα RMSD — Templated Apo vs Non-templated Reference", fontsize=13)
+ax.set_xticks(x)
+ax.set_xticklabels(labels, rotation=30, ha="right", fontsize=10)
+ax.legend(loc="upper left", fontsize=11)
+ax.yaxis.grid(True, linestyle="--", alpha=0.6)
+ax.set_axisbelow(True)
+ax.set_ylim(0, ax.get_ylim()[1] * 1.12)
+plt.tight_layout()
+fig.savefig(os.path.join(OUT_DIR, "seq5_ca_rmsd_bargraph.png"), dpi=300)
+plt.close()
+print(f"Saved: seq5_ca_rmsd_bargraph.png")
+
+fig, ax = plt.subplots(figsize=(14, 6))
+bars1 = ax.bar(x - width/2, df["allatom_rmsd_mean"], width,
+               yerr=df["allatom_rmsd_std"], capsize=4,
+               color="#4878CF", edgecolor="black", linewidth=0.7,
+               label="Templated avg")
+bars2 = ax.bar(x + width/2, df["repr_all_rmsd"], width,
+               color="#2ecc71", edgecolor="black", linewidth=0.7,
+               label="Original Cluster cif")
+add_value_labels(ax, bars1, df["allatom_rmsd_mean"].tolist())
+add_value_labels(ax, bars2, df["repr_all_rmsd"].tolist())
+ax.set_ylabel("RMSD (Å)", fontsize=12)
+ax.set_title("seq5 All-atom RMSD — Templated Apo vs Non-templated Reference", fontsize=13)
+ax.set_xticks(x)
+ax.set_xticklabels(labels, rotation=30, ha="right", fontsize=10)
+ax.legend(loc="upper left", fontsize=11)
+ax.yaxis.grid(True, linestyle="--", alpha=0.6)
+ax.set_axisbelow(True)
+ax.set_ylim(0, ax.get_ylim()[1] * 1.12)
+plt.tight_layout()
+fig.savefig(os.path.join(OUT_DIR, "seq5_allatom_rmsd_bargraph.png"), dpi=300)
+plt.close()
+print(f"Saved: seq5_allatom_rmsd_bargraph.png")
+
+def make_rankings_png(df, rmsd_col_repr, rmsd_col_templ, rmsd_label, out_filename):
+    repr_ranked  = df[["label", rmsd_col_repr]].dropna().sort_values(rmsd_col_repr).reset_index(drop=True)
+    repr_ranked.index += 1
+    templ_ranked = df[["label", rmsd_col_templ]].sort_values(rmsd_col_templ).reset_index(drop=True)
+    templ_ranked.index += 1
+
+    repr_order  = repr_ranked["label"].tolist()
+    templ_order = templ_ranked["label"].tolist()
+    repr_ranks  = [repr_order.index(c) + 1 for c in repr_order]
+    templ_ranks = [templ_order.index(c) + 1 for c in repr_order]
+
+    tau, p_value = kendalltau(repr_ranks, templ_ranks)
+    print(f"\n[{rmsd_label}] Kendall Tau: {tau:.4f}  |  p-value: {p_value:.4f}")
+
+    badge_colors = ["#2c7bb6", "#abd9e9", "#abd9e9", "#fdae61", "#fdae61",
+                    "#fdae61", "#d7191c", "#d7191c", "#d7191c", "#d7191c"]
+
+    fig, axes = plt.subplots(1, 2, figsize=(12, 8))
+    fig.patch.set_facecolor("white")
+
+    list_titles = [
+        f"SEQ5 Original aSAM Cluster Representative\n{rmsd_label} vs Non-templated Reference",
+        f"SEQ5 Templated Cluster Average\n{rmsd_label} vs Non-templated Reference"
+    ]
+
+    for ax, title, data in zip(axes, list_titles, [repr_ranked, templ_ranked]):
+        ax.set_xlim(0, 1)
+        ax.set_ylim(0, 1)
+        ax.axis("off")
+
+        ax.add_patch(mpatches.FancyBboxPatch((0.0, 0.88), 1.0, 0.12,
+            boxstyle="round,pad=0.01", facecolor="#2c3e50", edgecolor="none"))
+        ax.text(0.5, 0.94, title, transform=ax.transAxes,
+                ha="center", va="center", fontsize=10, fontweight="bold",
+                color="white", multialignment="center")
+
+        ax.text(0.5, 0.84, "1 = most similar to non-templated run",
+                transform=ax.transAxes, ha="center", va="center",
+                fontsize=8.5, color="#666666", style="italic")
+
+        row_height = 0.073
+        for i, (rank, row) in enumerate(data.iterrows()):
+            y  = 0.78 - i * row_height
+            bg = "#f0f4f8" if i % 2 == 0 else "white"
+            ax.add_patch(mpatches.FancyBboxPatch((0.0, y - 0.01), 1.0, row_height,
+                boxstyle="square,pad=0", facecolor=bg, edgecolor="none"))
+            ax.add_patch(plt.Circle((0.08, y + 0.025), 0.028,
+                color=badge_colors[i], transform=ax.transAxes, zorder=3))
+            ax.text(0.08, y + 0.025, str(rank), transform=ax.transAxes,
+                    ha="center", va="center", fontsize=9, fontweight="bold",
+                    color="white", zorder=4)
+            ax.text(0.18, y + 0.025, row["label"], transform=ax.transAxes,
+                    ha="left", va="center", fontsize=10, color="#2c3e50")
+
+        ax.add_patch(mpatches.FancyBboxPatch((0.0, 0.0), 1.0, 0.005,
+            boxstyle="square,pad=0", facecolor="#2c3e50", edgecolor="none"))
+
+    if tau >= 0.8:
+        interp = "strong agreement"
+    elif tau >= 0.5:
+        interp = "moderate agreement"
+    elif tau >= 0.2:
+        interp = "weak agreement"
+    elif tau >= -0.2:
+        interp = "no correlation"
+    else:
+        interp = "disagreement"
+
+    sig = "statistically significant" if p_value < 0.05 else "not statistically significant"
+
+    fig.text(0.5, 0.03,
+             f"Kendall Tau: {tau:.4f}  |  p-value: {p_value:.4f}  |  {interp}, {sig}",
+             ha="center", fontsize=10, color="#444444",
+             bbox=dict(boxstyle="round,pad=0.4", facecolor="#f0f4f8", edgecolor="#cccccc"))
+
+    plt.suptitle(f"seq5 Cluster Ranking — {rmsd_label} Similarity to Non-templated Apo Run",
+                 fontsize=13, fontweight="bold", color="#2c3e50", y=0.97)
+
+    plt.tight_layout(rect=[0, 0.07, 1, 0.95])
+    fig.savefig(os.path.join(OUT_DIR, out_filename), dpi=300, bbox_inches="tight")
+    plt.close()
+    print(f"Saved: {out_filename}")
+
+make_rankings_png(df,
+    rmsd_col_repr="repr_all_rmsd",
+    rmsd_col_templ="allatom_rmsd_mean",
+    rmsd_label="All-atom RMSD",
+    out_filename="seq5_rmsd_rankings_allatom.png")
+
+make_rankings_png(df,
+    rmsd_col_repr="repr_ca_rmsd",
+    rmsd_col_templ="ca_rmsd_mean",
+    rmsd_label="Cα RMSD",
+    out_filename="seq5_rmsd_rankings_calpha.png")

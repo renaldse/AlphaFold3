@@ -1,0 +1,42 @@
+==> [task 48] pdb_id=seq6_cluster7
+==> template CIF: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/structures/NODES_Proteins/seq6_cluster_repr_7.cif
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/seq6_cluster7_templated_apo_Jun11_2026_11.03.29AM_48.json
+==> running AF3 in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/seq6_cluster7_templated_apo_Jun11_2026_11.03.29AM_48
+Running AlphaFold 3. Please note that standard AlphaFold 3 model parameters are
+only available under terms of use provided at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+If you do not agree to these terms and are using AlphaFold 3 derived model
+parameters, cancel execution of AlphaFold 3 inference with CTRL-C, and do not
+use the model parameters.
+Found local devices: [CudaDevice(id=0)]
+Building model from scratch...
+Processing fold inputs.
+Processing fold input #1
+Processing fold input seq6_cluster7
+Checking we can load the model parameters...
+Running data pipeline...
+Processing chain A
+Processing chain A took 0.00 seconds
+Output directory: /root/af_output/seq6_cluster7_templated_apo_Jun11_2026_11.03.29AM_48/seq6_cluster7
+Writing model input JSON to /root/af_output/seq6_cluster7_templated_apo_Jun11_2026_11.03.29AM_48/seq6_cluster7
+Predicting 3D structure for seq6_cluster7 for seed(s) (923515879, 923515880)...
+Featurising data for seeds (923515879, 923515880)...
+Featurising seq6_cluster7 with rng_seed 923515879.
+Featurising seq6_cluster7 with rng_seed 923515879 took 12.08 seconds.
+Featurising seq6_cluster7 with rng_seed 923515880.
+Featurising seq6_cluster7 with rng_seed 923515880 took 12.35 seconds.
+Featurising data for seeds (923515879, 923515880) took  29.16 seconds.
+Running model inference for seed 923515879...
+Running model inference for seed 923515879 took  130.38 seconds.
+Extracting output structures (one per sample) for seed 923515879...
+Extracting output structures (one per sample) for seed 923515879 took  1.49 seconds.
+Running model inference and extracting output structures for seed 923515879 took  131.87 seconds.
+Running model inference for seed 923515880...
+Running model inference for seed 923515880 took  98.02 seconds.
+Extracting output structures (one per sample) for seed 923515880...
+Extracting output structures (one per sample) for seed 923515880 took  1.69 seconds.
+Running model inference and extracting output structures for seed 923515880 took  99.71 seconds.
+Running model inference and extracting output structures for seeds (923515879, 923515880) took  231.58 seconds.
+Writing outputs for seq6_cluster7 for seed(s) (923515879, 923515880)...
+Done processing fold input seq6_cluster7.
+Done processing 1 fold inputs.

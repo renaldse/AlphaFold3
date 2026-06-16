@@ -1,0 +1,10 @@
+Template mapping for OATP1B1: used mmCIF label_seq_id numbering. Mapped 562 template residues to query length 691. Apparent missing/unmapped query residues: 129. Sequence agreement at mapped positions: 562/562 = 100.0%.
+I0526 11:15:02.827456 22629526024192 folding_input.py:1044] Detected /root/af_input/OATP1B1_E3S_templated_cofold_May26_2026_11.15AM.json is an AlphaFold 3 JSON since the top-level is not a list.
+I0526 11:15:03.370012 22629526024192 xla_bridge.py:895] Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+I0526 11:15:03.370949 22629526024192 xla_bridge.py:895] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+I0526 11:15:08.846453 22629526024192 pipeline.py:404] Skipping MSA and template search for protein chain A because it already has MSAs and templates.
+I0526 11:15:15.532528 22629526024192 pipeline.py:165] processing OATP1B1, random_seed=1655790885
+I0526 11:15:15.605535 22629526024192 pipeline.py:258] Calculating bucket size for input with 715 tokens.
+I0526 11:15:15.605700 22629526024192 pipeline.py:264] Got bucket size 768 for input with 715 tokens, resulting in 53 padded tokens.
+I0526 11:15:19.335373 22629526024192 features.py:1499] Success constructing SMILES reference structure for: LIG_B
+I0526 11:15:22.922602 22629526024192 features.py:1499] Success constructing SMILES reference structure for: LIG_B

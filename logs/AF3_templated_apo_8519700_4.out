@@ -1,0 +1,42 @@
+==> [task 4] pdb_id=seq8
+==> template CIF: /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/seq8_apo_May26_2026_6.20PM/seq8/seed-150219150_sample-0/model.cif
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/seq8_templated_apo_May27_2026_11.02.16AM.json
+==> running AF3 in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/seq8_templated_apo_May27_2026_11.02.16AM
+Running AlphaFold 3. Please note that standard AlphaFold 3 model parameters are
+only available under terms of use provided at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+If you do not agree to these terms and are using AlphaFold 3 derived model
+parameters, cancel execution of AlphaFold 3 inference with CTRL-C, and do not
+use the model parameters.
+Found local devices: [CudaDevice(id=0)]
+Building model from scratch...
+Processing fold inputs.
+Processing fold input #1
+Processing fold input seq8
+Checking we can load the model parameters...
+Running data pipeline...
+Processing chain A
+Processing chain A took 0.00 seconds
+Output directory: /root/af_output/seq8_templated_apo_May27_2026_11.02.16AM/seq8
+Writing model input JSON to /root/af_output/seq8_templated_apo_May27_2026_11.02.16AM/seq8
+Predicting 3D structure for seq8 for seed(s) (150219149, 150219150)...
+Featurising data for seeds (150219149, 150219150)...
+Featurising seq8 with rng_seed 150219149.
+Featurising seq8 with rng_seed 150219149 took 16.91 seconds.
+Featurising seq8 with rng_seed 150219150.
+Featurising seq8 with rng_seed 150219150 took 16.73 seconds.
+Featurising data for seeds (150219149, 150219150) took  40.12 seconds.
+Running model inference for seed 150219149...
+Running model inference for seed 150219149 took  176.01 seconds.
+Extracting output structures (one per sample) for seed 150219149...
+Extracting output structures (one per sample) for seed 150219149 took  2.56 seconds.
+Running model inference and extracting output structures for seed 150219149 took  178.56 seconds.
+Running model inference for seed 150219150...
+Running model inference for seed 150219150 took  142.78 seconds.
+Extracting output structures (one per sample) for seed 150219150...
+Extracting output structures (one per sample) for seed 150219150 took  2.27 seconds.
+Running model inference and extracting output structures for seed 150219150 took  145.05 seconds.
+Running model inference and extracting output structures for seeds (150219149, 150219150) took  323.61 seconds.
+Writing outputs for seq8 for seed(s) (150219149, 150219150)...
+Done processing fold input seq8.
+Done processing 1 fold inputs.

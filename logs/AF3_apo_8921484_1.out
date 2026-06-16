@@ -1,0 +1,3 @@
+==> [task 1] pdb_id=seq1
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/seq1_apo_Jun2_2026_3.28PM.json
+==> running AF3 (expected 10 structures) in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/seq1_apo_Jun2_2026_3.28PM

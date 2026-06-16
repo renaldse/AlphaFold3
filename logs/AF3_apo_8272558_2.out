@@ -1,0 +1,34 @@
+==> [task 2] pdb_id=seq2
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/seq2_apo_May22_2026_4.44PM.json
+==> running AF3 (expected 7 structures) in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/seq2_apo_May22_2026_4.44PM
+Running AlphaFold 3. Please note that standard AlphaFold 3 model parameters are
+only available under terms of use provided at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+If you do not agree to these terms and are using AlphaFold 3 derived model
+parameters, cancel execution of AlphaFold 3 inference with CTRL-C, and do not
+use the model parameters.
+Found local devices: [CudaDevice(id=0)]
+Building model from scratch...
+Processing fold inputs.
+Processing fold input #1
+Processing fold input seq2
+Checking we can load the model parameters...
+Running data pipeline...
+Processing chain A
+Processing chain A took 757.45 seconds
+Output directory: /root/af_output/seq2_apo_May22_2026_4.44PM/seq2
+Writing model input JSON to /root/af_output/seq2_apo_May22_2026_4.44PM/seq2
+Predicting 3D structure for seq2 for seed(s) (1747042453,)...
+Featurising data for seeds (1747042453,)...
+Featurising seq2 with rng_seed 1747042453.
+Featurising seq2 with rng_seed 1747042453 took 1.61 seconds.
+Featurising data for seeds (1747042453,) took  8.14 seconds.
+Running model inference for seed 1747042453...
+Running model inference for seed 1747042453 took  40.61 seconds.
+Extracting output structures (one per sample) for seed 1747042453...
+Extracting output structures (one per sample) for seed 1747042453 took  0.14 seconds.
+Running model inference and extracting output structures for seed 1747042453 took  40.75 seconds.
+Running model inference and extracting output structures for seeds (1747042453,) took  40.75 seconds.
+Writing outputs for seq2 for seed(s) (1747042453,)...
+Done processing fold input seq2.
+Done processing 1 fold inputs.

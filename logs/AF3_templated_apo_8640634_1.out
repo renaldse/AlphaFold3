@@ -1,0 +1,4 @@
+==> [task 1] pdb_id=seq5_cluster0
+==> template CIF: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/structures/NODES_Proteins/seq5_cluster_repr_0.cif
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/seq5_cluster0_templated_apo_May29_2026_2.35.17PM_1.json
+==> running AF3 in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/seq5_cluster0_templated_apo_May29_2026_2.35.17PM_1

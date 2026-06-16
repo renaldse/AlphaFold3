@@ -1,0 +1,16 @@
+#!/bin/bash --login
+#SBATCH --job-name=norm_heatmaps
+#SBATCH --time=12:00:00
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=64G
+#SBATCH --output=/mnt/gs21/scratch/renaldse/AlphaFold3/logs/norm_heatmaps_%j.out
+#SBATCH --error=/mnt/gs21/scratch/renaldse/AlphaFold3/logs/norm_heatmaps_%j.err
+
+set -euo pipefail
+
+module purge
+module load Python/3.11.3-GCCcore-12.3.0
+
+cd /mnt/gs21/scratch/renaldse/AlphaFold3/scripts
+
+python3 normalized_rmsd_heatmaps.py

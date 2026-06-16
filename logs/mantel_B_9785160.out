@@ -1,0 +1,1140 @@
+
+============================================================
+  Approach B | Sequence: SEQ1 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 2.707 A
+    tmpl 0 vs 2: 2.755 A
+    tmpl 0 vs 3: 2.704 A
+    tmpl 0 vs 4: 2.309 A
+    tmpl 0 vs 5: 2.210 A
+    tmpl 0 vs 6: 2.668 A
+    tmpl 0 vs 7: 2.201 A
+    tmpl 0 vs 8: 2.981 A
+    tmpl 0 vs 9: 2.982 A
+    tmpl 1 vs 2: 3.189 A
+    tmpl 1 vs 3: 2.928 A
+    tmpl 1 vs 4: 2.805 A
+    tmpl 1 vs 5: 2.641 A
+    tmpl 1 vs 6: 2.597 A
+    tmpl 1 vs 7: 2.670 A
+    tmpl 1 vs 8: 3.277 A
+    tmpl 1 vs 9: 3.208 A
+    tmpl 2 vs 3: 3.073 A
+    tmpl 2 vs 4: 2.895 A
+    tmpl 2 vs 5: 2.776 A
+    tmpl 2 vs 6: 3.219 A
+    tmpl 2 vs 7: 2.910 A
+    tmpl 2 vs 8: 3.472 A
+    tmpl 2 vs 9: 3.528 A
+    tmpl 3 vs 4: 2.898 A
+    tmpl 3 vs 5: 2.557 A
+    tmpl 3 vs 6: 2.898 A
+    tmpl 3 vs 7: 2.787 A
+    tmpl 3 vs 8: 3.361 A
+    tmpl 3 vs 9: 3.548 A
+    tmpl 4 vs 5: 2.364 A
+    tmpl 4 vs 6: 2.581 A
+    tmpl 4 vs 7: 2.142 A
+    tmpl 4 vs 8: 2.701 A
+    tmpl 4 vs 9: 2.705 A
+    tmpl 5 vs 6: 2.625 A
+    tmpl 5 vs 7: 2.175 A
+    tmpl 5 vs 8: 2.824 A
+    tmpl 5 vs 9: 3.003 A
+    tmpl 6 vs 7: 2.579 A
+    tmpl 6 vs 8: 2.756 A
+    tmpl 6 vs 9: 3.248 A
+    tmpl 7 vs 8: 2.913 A
+    tmpl 7 vs 9: 2.825 A
+    tmpl 8 vs 9: 3.483 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.3078   p = 0.0027
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq1_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq1_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ2 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 2.299 A
+    tmpl 0 vs 2: 2.107 A
+    tmpl 0 vs 3: 2.248 A
+    tmpl 0 vs 4: 2.355 A
+    tmpl 0 vs 5: 2.192 A
+    tmpl 0 vs 6: 2.217 A
+    tmpl 0 vs 7: 2.466 A
+    tmpl 0 vs 8: 2.305 A
+    tmpl 0 vs 9: 2.632 A
+    tmpl 1 vs 2: 2.102 A
+    tmpl 1 vs 3: 2.242 A
+    tmpl 1 vs 4: 2.253 A
+    tmpl 1 vs 5: 2.235 A
+    tmpl 1 vs 6: 2.460 A
+    tmpl 1 vs 7: 2.191 A
+    tmpl 1 vs 8: 2.530 A
+    tmpl 1 vs 9: 2.893 A
+    tmpl 2 vs 3: 1.937 A
+    tmpl 2 vs 4: 1.821 A
+    tmpl 2 vs 5: 1.750 A
+    tmpl 2 vs 6: 1.903 A
+    tmpl 2 vs 7: 2.026 A
+    tmpl 2 vs 8: 2.088 A
+    tmpl 2 vs 9: 2.545 A
+    tmpl 3 vs 4: 2.148 A
+    tmpl 3 vs 5: 2.039 A
+    tmpl 3 vs 6: 2.130 A
+    tmpl 3 vs 7: 1.941 A
+    tmpl 3 vs 8: 2.413 A
+    tmpl 3 vs 9: 2.797 A
+    tmpl 4 vs 5: 2.081 A
+    tmpl 4 vs 6: 1.864 A
+    tmpl 4 vs 7: 2.064 A
+    tmpl 4 vs 8: 2.048 A
+    tmpl 4 vs 9: 2.509 A
+    tmpl 5 vs 6: 1.868 A
+    tmpl 5 vs 7: 2.056 A
+    tmpl 5 vs 8: 2.055 A
+    tmpl 5 vs 9: 2.458 A
+    tmpl 6 vs 7: 1.949 A
+    tmpl 6 vs 8: 2.048 A
+    tmpl 6 vs 9: 2.481 A
+    tmpl 7 vs 8: 2.206 A
+    tmpl 7 vs 9: 2.709 A
+    tmpl 8 vs 9: 2.415 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = -0.0080   p = 0.5248
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq2_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq2_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ3 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 4.857 A
+    tmpl 0 vs 2: 6.295 A
+    tmpl 0 vs 3: 4.698 A
+    tmpl 0 vs 4: 5.112 A
+    tmpl 0 vs 5: 6.326 A
+    tmpl 0 vs 6: 4.833 A
+    tmpl 0 vs 7: 6.888 A
+    tmpl 0 vs 8: 7.260 A
+    tmpl 0 vs 9: 4.893 A
+    tmpl 1 vs 2: 6.290 A
+    tmpl 1 vs 3: 4.587 A
+    tmpl 1 vs 4: 4.481 A
+    tmpl 1 vs 5: 6.028 A
+    tmpl 1 vs 6: 5.948 A
+    tmpl 1 vs 7: 6.630 A
+    tmpl 1 vs 8: 7.140 A
+    tmpl 1 vs 9: 4.770 A
+    tmpl 2 vs 3: 6.464 A
+    tmpl 2 vs 4: 6.704 A
+    tmpl 2 vs 5: 7.357 A
+    tmpl 2 vs 6: 5.392 A
+    tmpl 2 vs 7: 4.686 A
+    tmpl 2 vs 8: 7.068 A
+    tmpl 2 vs 9: 5.690 A
+    tmpl 3 vs 4: 5.665 A
+    tmpl 3 vs 5: 6.484 A
+    tmpl 3 vs 6: 5.522 A
+    tmpl 3 vs 7: 7.462 A
+    tmpl 3 vs 8: 6.925 A
+    tmpl 3 vs 9: 5.584 A
+    tmpl 4 vs 5: 5.481 A
+    tmpl 4 vs 6: 6.368 A
+    tmpl 4 vs 7: 6.838 A
+    tmpl 4 vs 8: 6.979 A
+    tmpl 4 vs 9: 5.360 A
+    tmpl 5 vs 6: 6.561 A
+    tmpl 5 vs 7: 6.783 A
+    tmpl 5 vs 8: 8.350 A
+    tmpl 5 vs 9: 6.496 A
+    tmpl 6 vs 7: 6.528 A
+    tmpl 6 vs 8: 7.925 A
+    tmpl 6 vs 9: 6.495 A
+    tmpl 7 vs 8: 7.918 A
+    tmpl 7 vs 9: 5.704 A
+    tmpl 8 vs 9: 7.671 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.2090   p = 0.0112
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq3_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq3_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ5 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 2.035 A
+    tmpl 0 vs 2: 2.013 A
+    tmpl 0 vs 3: 2.071 A
+    tmpl 0 vs 4: 4.255 A
+    tmpl 0 vs 5: 2.340 A
+    tmpl 0 vs 6: 2.182 A
+    tmpl 0 vs 7: 2.303 A
+    tmpl 0 vs 8: 2.114 A
+    tmpl 0 vs 9: 2.250 A
+    tmpl 1 vs 2: 1.779 A
+    tmpl 1 vs 3: 1.811 A
+    tmpl 1 vs 4: 4.224 A
+    tmpl 1 vs 5: 2.372 A
+    tmpl 1 vs 6: 2.239 A
+    tmpl 1 vs 7: 2.136 A
+    tmpl 1 vs 8: 1.783 A
+    tmpl 1 vs 9: 2.378 A
+    tmpl 2 vs 3: 1.793 A
+    tmpl 2 vs 4: 4.253 A
+    tmpl 2 vs 5: 2.182 A
+    tmpl 2 vs 6: 2.255 A
+    tmpl 2 vs 7: 1.940 A
+    tmpl 2 vs 8: 1.813 A
+    tmpl 2 vs 9: 2.381 A
+    tmpl 3 vs 4: 4.212 A
+    tmpl 3 vs 5: 2.304 A
+    tmpl 3 vs 6: 2.388 A
+    tmpl 3 vs 7: 2.014 A
+    tmpl 3 vs 8: 1.948 A
+    tmpl 3 vs 9: 2.321 A
+    tmpl 4 vs 5: 4.621 A
+    tmpl 4 vs 6: 4.685 A
+    tmpl 4 vs 7: 4.407 A
+    tmpl 4 vs 8: 4.161 A
+    tmpl 4 vs 9: 4.119 A
+    tmpl 5 vs 6: 2.401 A
+    tmpl 5 vs 7: 2.374 A
+    tmpl 5 vs 8: 2.411 A
+    tmpl 5 vs 9: 2.662 A
+    tmpl 6 vs 7: 2.287 A
+    tmpl 6 vs 8: 2.374 A
+    tmpl 6 vs 9: 2.531 A
+    tmpl 7 vs 8: 2.086 A
+    tmpl 7 vs 9: 2.476 A
+    tmpl 8 vs 9: 2.300 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.7699   p = 0.0001
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq5_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq5_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ6 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 28.471 A
+    tmpl 0 vs 2: 27.023 A
+    tmpl 0 vs 3: 29.252 A
+    tmpl 0 vs 4: 28.366 A
+    tmpl 0 vs 5: 30.271 A
+    tmpl 0 vs 6: 27.109 A
+    tmpl 0 vs 7: 30.811 A
+    tmpl 0 vs 8: 29.680 A
+    tmpl 0 vs 9: 28.021 A
+    tmpl 1 vs 2: 25.706 A
+    tmpl 1 vs 3: 28.036 A
+    tmpl 1 vs 4: 24.291 A
+    tmpl 1 vs 5: 24.289 A
+    tmpl 1 vs 6: 25.823 A
+    tmpl 1 vs 7: 26.472 A
+    tmpl 1 vs 8: 26.101 A
+    tmpl 1 vs 9: 23.524 A
+    tmpl 2 vs 3: 23.401 A
+    tmpl 2 vs 4: 26.004 A
+    tmpl 2 vs 5: 25.690 A
+    tmpl 2 vs 6: 23.154 A
+    tmpl 2 vs 7: 23.345 A
+    tmpl 2 vs 8: 25.522 A
+    tmpl 2 vs 9: 24.728 A
+    tmpl 3 vs 4: 26.645 A
+    tmpl 3 vs 5: 25.815 A
+    tmpl 3 vs 6: 25.256 A
+    tmpl 3 vs 7: 22.367 A
+    tmpl 3 vs 8: 28.510 A
+    tmpl 3 vs 9: 25.963 A
+    tmpl 4 vs 5: 25.271 A
+    tmpl 4 vs 6: 25.745 A
+    tmpl 4 vs 7: 25.395 A
+    tmpl 4 vs 8: 25.100 A
+    tmpl 4 vs 9: 23.301 A
+    tmpl 5 vs 6: 27.383 A
+    tmpl 5 vs 7: 22.905 A
+    tmpl 5 vs 8: 27.651 A
+    tmpl 5 vs 9: 21.915 A
+    tmpl 6 vs 7: 25.777 A
+    tmpl 6 vs 8: 26.627 A
+    tmpl 6 vs 9: 24.972 A
+    tmpl 7 vs 8: 26.710 A
+    tmpl 7 vs 9: 23.306 A
+    tmpl 8 vs 9: 25.761 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.1596   p = 0.0146
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq6_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq6_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ7 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 10.431 A
+    tmpl 0 vs 2: 13.737 A
+    tmpl 0 vs 3: 12.721 A
+    tmpl 0 vs 4: 15.992 A
+    tmpl 0 vs 5: 11.297 A
+    tmpl 0 vs 6: 14.922 A
+    tmpl 0 vs 7: 15.818 A
+    tmpl 0 vs 8: 9.484 A
+    tmpl 0 vs 9: 12.358 A
+    tmpl 1 vs 2: 10.479 A
+    tmpl 1 vs 3: 8.645 A
+    tmpl 1 vs 4: 14.352 A
+    tmpl 1 vs 5: 13.222 A
+    tmpl 1 vs 6: 13.101 A
+    tmpl 1 vs 7: 16.571 A
+    tmpl 1 vs 8: 8.532 A
+    tmpl 1 vs 9: 15.074 A
+    tmpl 2 vs 3: 12.389 A
+    tmpl 2 vs 4: 19.227 A
+    tmpl 2 vs 5: 15.425 A
+    tmpl 2 vs 6: 12.462 A
+    tmpl 2 vs 7: 13.492 A
+    tmpl 2 vs 8: 14.904 A
+    tmpl 2 vs 9: 16.458 A
+    tmpl 3 vs 4: 13.245 A
+    tmpl 3 vs 5: 12.411 A
+    tmpl 3 vs 6: 15.061 A
+    tmpl 3 vs 7: 17.551 A
+    tmpl 3 vs 8: 10.007 A
+    tmpl 3 vs 9: 15.240 A
+    tmpl 4 vs 5: 17.416 A
+    tmpl 4 vs 6: 17.563 A
+    tmpl 4 vs 7: 22.673 A
+    tmpl 4 vs 8: 14.089 A
+    tmpl 4 vs 9: 20.153 A
+    tmpl 5 vs 6: 17.460 A
+    tmpl 5 vs 7: 15.325 A
+    tmpl 5 vs 8: 11.372 A
+    tmpl 5 vs 9: 11.412 A
+    tmpl 6 vs 7: 17.319 A
+    tmpl 6 vs 8: 15.662 A
+    tmpl 6 vs 9: 16.751 A
+    tmpl 7 vs 8: 17.372 A
+    tmpl 7 vs 9: 10.086 A
+    tmpl 8 vs 9: 13.102 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = -0.0060   p = 0.5035
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq7_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq7_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ9 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 16.700 A
+    tmpl 0 vs 2: 13.503 A
+    tmpl 0 vs 3: 13.453 A
+    tmpl 0 vs 4: 13.739 A
+    tmpl 0 vs 5: 15.927 A
+    tmpl 0 vs 6: 16.585 A
+    tmpl 0 vs 7: 13.247 A
+    tmpl 0 vs 8: 11.700 A
+    tmpl 0 vs 9: 16.442 A
+    tmpl 1 vs 2: 13.502 A
+    tmpl 1 vs 3: 12.787 A
+    tmpl 1 vs 4: 17.065 A
+    tmpl 1 vs 5: 15.648 A
+    tmpl 1 vs 6: 15.301 A
+    tmpl 1 vs 7: 15.053 A
+    tmpl 1 vs 8: 17.340 A
+    tmpl 1 vs 9: 18.065 A
+    tmpl 2 vs 3: 11.725 A
+    tmpl 2 vs 4: 14.758 A
+    tmpl 2 vs 5: 15.697 A
+    tmpl 2 vs 6: 13.611 A
+    tmpl 2 vs 7: 14.219 A
+    tmpl 2 vs 8: 15.124 A
+    tmpl 2 vs 9: 16.716 A
+    tmpl 3 vs 4: 15.850 A
+    tmpl 3 vs 5: 16.927 A
+    tmpl 3 vs 6: 13.407 A
+    tmpl 3 vs 7: 13.829 A
+    tmpl 3 vs 8: 14.215 A
+    tmpl 3 vs 9: 18.056 A
+    tmpl 4 vs 5: 13.087 A
+    tmpl 4 vs 6: 17.096 A
+    tmpl 4 vs 7: 16.512 A
+    tmpl 4 vs 8: 13.144 A
+    tmpl 4 vs 9: 13.562 A
+    tmpl 5 vs 6: 14.833 A
+    tmpl 5 vs 7: 16.288 A
+    tmpl 5 vs 8: 17.845 A
+    tmpl 5 vs 9: 10.522 A
+    tmpl 6 vs 7: 14.228 A
+    tmpl 6 vs 8: 18.626 A
+    tmpl 6 vs 9: 18.079 A
+    tmpl 7 vs 8: 13.600 A
+    tmpl 7 vs 9: 16.501 A
+    tmpl 8 vs 9: 17.027 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.1853   p = 0.0021
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq9_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq9_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ10 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 20.761 A
+    tmpl 0 vs 2: 21.502 A
+    tmpl 0 vs 3: 21.046 A
+    tmpl 0 vs 4: 25.999 A
+    tmpl 0 vs 5: 20.468 A
+    tmpl 0 vs 6: 24.764 A
+    tmpl 0 vs 7: 16.836 A
+    tmpl 0 vs 8: 24.726 A
+    tmpl 0 vs 9: 22.174 A
+    tmpl 1 vs 2: 23.718 A
+    tmpl 1 vs 3: 21.907 A
+    tmpl 1 vs 4: 25.820 A
+    tmpl 1 vs 5: 21.891 A
+    tmpl 1 vs 6: 22.785 A
+    tmpl 1 vs 7: 20.259 A
+    tmpl 1 vs 8: 27.724 A
+    tmpl 1 vs 9: 22.506 A
+    tmpl 2 vs 3: 18.314 A
+    tmpl 2 vs 4: 16.850 A
+    tmpl 2 vs 5: 17.804 A
+    tmpl 2 vs 6: 21.288 A
+    tmpl 2 vs 7: 22.023 A
+    tmpl 2 vs 8: 19.021 A
+    tmpl 2 vs 9: 24.637 A
+    tmpl 3 vs 4: 22.296 A
+    tmpl 3 vs 5: 16.516 A
+    tmpl 3 vs 6: 23.979 A
+    tmpl 3 vs 7: 22.615 A
+    tmpl 3 vs 8: 23.987 A
+    tmpl 3 vs 9: 28.083 A
+    tmpl 4 vs 5: 24.196 A
+    tmpl 4 vs 6: 18.363 A
+    tmpl 4 vs 7: 21.386 A
+    tmpl 4 vs 8: 16.861 A
+    tmpl 4 vs 9: 18.000 A
+    tmpl 5 vs 6: 23.343 A
+    tmpl 5 vs 7: 23.746 A
+    tmpl 5 vs 8: 24.653 A
+    tmpl 5 vs 9: 26.747 A
+    tmpl 6 vs 7: 23.290 A
+    tmpl 6 vs 8: 22.880 A
+    tmpl 6 vs 9: 18.954 A
+    tmpl 7 vs 8: 22.776 A
+    tmpl 7 vs 9: 17.484 A
+    tmpl 8 vs 9: 21.837 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.0093   p = 0.4010
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq10_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq10_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ11 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 15.013 A
+    tmpl 0 vs 2: 15.762 A
+    tmpl 0 vs 3: 17.906 A
+    tmpl 0 vs 4: 17.133 A
+    tmpl 0 vs 5: 12.848 A
+    tmpl 0 vs 6: 15.250 A
+    tmpl 0 vs 7: 12.521 A
+    tmpl 0 vs 8: 16.114 A
+    tmpl 0 vs 9: 13.127 A
+    tmpl 1 vs 2: 12.301 A
+    tmpl 1 vs 3: 14.980 A
+    tmpl 1 vs 4: 18.535 A
+    tmpl 1 vs 5: 15.965 A
+    tmpl 1 vs 6: 14.006 A
+    tmpl 1 vs 7: 15.317 A
+    tmpl 1 vs 8: 14.096 A
+    tmpl 1 vs 9: 13.972 A
+    tmpl 2 vs 3: 16.092 A
+    tmpl 2 vs 4: 19.253 A
+    tmpl 2 vs 5: 16.033 A
+    tmpl 2 vs 6: 12.725 A
+    tmpl 2 vs 7: 13.680 A
+    tmpl 2 vs 8: 11.428 A
+    tmpl 2 vs 9: 15.027 A
+    tmpl 3 vs 4: 24.667 A
+    tmpl 3 vs 5: 19.121 A
+    tmpl 3 vs 6: 13.870 A
+    tmpl 3 vs 7: 20.363 A
+    tmpl 3 vs 8: 13.872 A
+    tmpl 3 vs 9: 15.781 A
+    tmpl 4 vs 5: 15.379 A
+    tmpl 4 vs 6: 21.362 A
+    tmpl 4 vs 7: 15.079 A
+    tmpl 4 vs 8: 22.196 A
+    tmpl 4 vs 9: 15.822 A
+    tmpl 5 vs 6: 17.499 A
+    tmpl 5 vs 7: 12.897 A
+    tmpl 5 vs 8: 16.924 A
+    tmpl 5 vs 9: 13.366 A
+    tmpl 6 vs 7: 16.304 A
+    tmpl 6 vs 8: 13.259 A
+    tmpl 6 vs 9: 13.717 A
+    tmpl 7 vs 8: 16.209 A
+    tmpl 7 vs 9: 14.937 A
+    tmpl 8 vs 9: 15.455 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.1274   p = 0.0634
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq11_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq11_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ12 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 15.925 A
+    tmpl 0 vs 2: 15.629 A
+    tmpl 0 vs 3: 13.432 A
+    tmpl 0 vs 4: 18.336 A
+    tmpl 0 vs 5: 15.987 A
+    tmpl 0 vs 6: 21.087 A
+    tmpl 0 vs 7: 22.780 A
+    tmpl 0 vs 8: 15.993 A
+    tmpl 0 vs 9: 15.523 A
+    tmpl 1 vs 2: 16.948 A
+    tmpl 1 vs 3: 14.372 A
+    tmpl 1 vs 4: 14.711 A
+    tmpl 1 vs 5: 16.036 A
+    tmpl 1 vs 6: 14.383 A
+    tmpl 1 vs 7: 20.837 A
+    tmpl 1 vs 8: 17.407 A
+    tmpl 1 vs 9: 11.110 A
+    tmpl 2 vs 3: 14.487 A
+    tmpl 2 vs 4: 16.337 A
+    tmpl 2 vs 5: 20.612 A
+    tmpl 2 vs 6: 17.457 A
+    tmpl 2 vs 7: 16.786 A
+    tmpl 2 vs 8: 18.639 A
+    tmpl 2 vs 9: 16.077 A
+    tmpl 3 vs 4: 12.353 A
+    tmpl 3 vs 5: 14.995 A
+    tmpl 3 vs 6: 18.437 A
+    tmpl 3 vs 7: 21.685 A
+    tmpl 3 vs 8: 14.329 A
+    tmpl 3 vs 9: 14.796 A
+    tmpl 4 vs 5: 15.826 A
+    tmpl 4 vs 6: 16.537 A
+    tmpl 4 vs 7: 18.985 A
+    tmpl 4 vs 8: 16.123 A
+    tmpl 4 vs 9: 16.379 A
+    tmpl 5 vs 6: 21.511 A
+    tmpl 5 vs 7: 25.675 A
+    tmpl 5 vs 8: 16.393 A
+    tmpl 5 vs 9: 14.677 A
+    tmpl 6 vs 7: 16.663 A
+    tmpl 6 vs 8: 20.507 A
+    tmpl 6 vs 9: 15.364 A
+    tmpl 7 vs 8: 23.131 A
+    tmpl 7 vs 9: 22.080 A
+    tmpl 8 vs 9: 17.832 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.2990   p = 0.0007
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq12_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq12_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ13 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 13.909 A
+    tmpl 0 vs 2: 13.975 A
+    tmpl 0 vs 3: 14.401 A
+    tmpl 0 vs 4: 18.844 A
+    tmpl 0 vs 5: 16.905 A
+    tmpl 0 vs 6: 15.403 A
+    tmpl 0 vs 7: 17.862 A
+    tmpl 0 vs 8: 15.318 A
+    tmpl 0 vs 9: 12.600 A
+    tmpl 1 vs 2: 16.599 A
+    tmpl 1 vs 3: 17.138 A
+    tmpl 1 vs 4: 15.105 A
+    tmpl 1 vs 5: 23.150 A
+    tmpl 1 vs 6: 16.395 A
+    tmpl 1 vs 7: 23.733 A
+    tmpl 1 vs 8: 19.190 A
+    tmpl 1 vs 9: 12.976 A
+    tmpl 2 vs 3: 16.340 A
+    tmpl 2 vs 4: 13.907 A
+    tmpl 2 vs 5: 17.301 A
+    tmpl 2 vs 6: 12.035 A
+    tmpl 2 vs 7: 18.089 A
+    tmpl 2 vs 8: 11.927 A
+    tmpl 2 vs 9: 12.266 A
+    tmpl 3 vs 4: 21.697 A
+    tmpl 3 vs 5: 16.003 A
+    tmpl 3 vs 6: 20.345 A
+    tmpl 3 vs 7: 15.474 A
+    tmpl 3 vs 8: 13.712 A
+    tmpl 3 vs 9: 18.415 A
+    tmpl 4 vs 5: 23.726 A
+    tmpl 4 vs 6: 13.080 A
+    tmpl 4 vs 7: 23.441 A
+    tmpl 4 vs 8: 18.772 A
+    tmpl 4 vs 9: 13.025 A
+    tmpl 5 vs 6: 19.074 A
+    tmpl 5 vs 7: 12.408 A
+    tmpl 5 vs 8: 13.498 A
+    tmpl 5 vs 9: 18.842 A
+    tmpl 6 vs 7: 22.447 A
+    tmpl 6 vs 8: 16.407 A
+    tmpl 6 vs 9: 12.838 A
+    tmpl 7 vs 8: 13.941 A
+    tmpl 7 vs 9: 21.270 A
+    tmpl 8 vs 9: 14.945 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.0882   p = 0.1345
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq13_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq13_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ14 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 3.474 A
+    tmpl 0 vs 2: 2.515 A
+    tmpl 0 vs 3: 4.133 A
+    tmpl 0 vs 4: 3.583 A
+    tmpl 0 vs 5: 3.351 A
+    tmpl 0 vs 6: 3.145 A
+    tmpl 0 vs 7: 3.374 A
+    tmpl 0 vs 8: 2.914 A
+    tmpl 0 vs 9: 3.697 A
+    tmpl 1 vs 2: 3.864 A
+    tmpl 1 vs 3: 4.320 A
+    tmpl 1 vs 4: 4.161 A
+    tmpl 1 vs 5: 3.642 A
+    tmpl 1 vs 6: 3.380 A
+    tmpl 1 vs 7: 3.182 A
+    tmpl 1 vs 8: 3.597 A
+    tmpl 1 vs 9: 4.883 A
+    tmpl 2 vs 3: 4.327 A
+    tmpl 2 vs 4: 3.429 A
+    tmpl 2 vs 5: 3.078 A
+    tmpl 2 vs 6: 3.059 A
+    tmpl 2 vs 7: 3.597 A
+    tmpl 2 vs 8: 2.948 A
+    tmpl 2 vs 9: 3.896 A
+    tmpl 3 vs 4: 4.134 A
+    tmpl 3 vs 5: 4.124 A
+    tmpl 3 vs 6: 4.145 A
+    tmpl 3 vs 7: 4.223 A
+    tmpl 3 vs 8: 4.185 A
+    tmpl 3 vs 9: 3.898 A
+    tmpl 4 vs 5: 3.073 A
+    tmpl 4 vs 6: 3.900 A
+    tmpl 4 vs 7: 3.855 A
+    tmpl 4 vs 8: 3.437 A
+    tmpl 4 vs 9: 3.703 A
+    tmpl 5 vs 6: 3.392 A
+    tmpl 5 vs 7: 3.604 A
+    tmpl 5 vs 8: 3.514 A
+    tmpl 5 vs 9: 4.078 A
+    tmpl 6 vs 7: 3.393 A
+    tmpl 6 vs 8: 3.276 A
+    tmpl 6 vs 9: 4.498 A
+    tmpl 7 vs 8: 3.302 A
+    tmpl 7 vs 9: 4.293 A
+    tmpl 8 vs 9: 3.919 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.5408   p = 0.0001
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq14_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq14_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ15 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 4.038 A
+    tmpl 0 vs 2: 5.817 A
+    tmpl 0 vs 3: 6.400 A
+    tmpl 0 vs 4: 3.950 A
+    tmpl 0 vs 5: 4.448 A
+    tmpl 0 vs 6: 3.753 A
+    tmpl 0 vs 7: 4.426 A
+    tmpl 0 vs 8: 5.490 A
+    tmpl 0 vs 9: 4.614 A
+    tmpl 1 vs 2: 7.278 A
+    tmpl 1 vs 3: 5.624 A
+    tmpl 1 vs 4: 4.245 A
+    tmpl 1 vs 5: 5.558 A
+    tmpl 1 vs 6: 3.611 A
+    tmpl 1 vs 7: 4.559 A
+    tmpl 1 vs 8: 7.324 A
+    tmpl 1 vs 9: 4.428 A
+    tmpl 2 vs 3: 6.312 A
+    tmpl 2 vs 4: 7.625 A
+    tmpl 2 vs 5: 5.745 A
+    tmpl 2 vs 6: 7.686 A
+    tmpl 2 vs 7: 4.868 A
+    tmpl 2 vs 8: 3.610 A
+    tmpl 2 vs 9: 7.558 A
+    tmpl 3 vs 4: 7.254 A
+    tmpl 3 vs 5: 7.744 A
+    tmpl 3 vs 6: 7.433 A
+    tmpl 3 vs 7: 4.499 A
+    tmpl 3 vs 8: 7.803 A
+    tmpl 3 vs 9: 5.832 A
+    tmpl 4 vs 5: 5.848 A
+    tmpl 4 vs 6: 4.047 A
+    tmpl 4 vs 7: 5.240 A
+    tmpl 4 vs 8: 6.934 A
+    tmpl 4 vs 9: 5.534 A
+    tmpl 5 vs 6: 4.579 A
+    tmpl 5 vs 7: 6.044 A
+    tmpl 5 vs 8: 5.080 A
+    tmpl 5 vs 9: 4.555 A
+    tmpl 6 vs 7: 5.890 A
+    tmpl 6 vs 8: 6.703 A
+    tmpl 6 vs 9: 4.029 A
+    tmpl 7 vs 8: 5.943 A
+    tmpl 7 vs 9: 5.790 A
+    tmpl 8 vs 9: 7.241 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.1785   p = 0.0305
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq15_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq15_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ16 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 4.072 A
+    tmpl 0 vs 2: 3.415 A
+    tmpl 0 vs 3: 3.110 A
+    tmpl 0 vs 4: 3.897 A
+    tmpl 0 vs 5: 4.320 A
+    tmpl 0 vs 6: 4.250 A
+    tmpl 0 vs 7: 4.002 A
+    tmpl 0 vs 8: 3.533 A
+    tmpl 0 vs 9: 4.395 A
+    tmpl 1 vs 2: 4.214 A
+    tmpl 1 vs 3: 4.059 A
+    tmpl 1 vs 4: 5.094 A
+    tmpl 1 vs 5: 3.678 A
+    tmpl 1 vs 6: 4.292 A
+    tmpl 1 vs 7: 4.394 A
+    tmpl 1 vs 8: 3.913 A
+    tmpl 1 vs 9: 3.463 A
+    tmpl 2 vs 3: 3.755 A
+    tmpl 2 vs 4: 2.784 A
+    tmpl 2 vs 5: 3.780 A
+    tmpl 2 vs 6: 2.921 A
+    tmpl 2 vs 7: 5.056 A
+    tmpl 2 vs 8: 3.496 A
+    tmpl 2 vs 9: 5.418 A
+    tmpl 3 vs 4: 4.318 A
+    tmpl 3 vs 5: 4.929 A
+    tmpl 3 vs 6: 4.863 A
+    tmpl 3 vs 7: 4.966 A
+    tmpl 3 vs 8: 4.055 A
+    tmpl 3 vs 9: 4.291 A
+    tmpl 4 vs 5: 4.754 A
+    tmpl 4 vs 6: 3.554 A
+    tmpl 4 vs 7: 5.716 A
+    tmpl 4 vs 8: 4.097 A
+    tmpl 4 vs 9: 6.377 A
+    tmpl 5 vs 6: 3.772 A
+    tmpl 5 vs 7: 4.900 A
+    tmpl 5 vs 8: 3.912 A
+    tmpl 5 vs 9: 4.943 A
+    tmpl 6 vs 7: 5.574 A
+    tmpl 6 vs 8: 3.548 A
+    tmpl 6 vs 9: 5.884 A
+    tmpl 7 vs 8: 4.419 A
+    tmpl 7 vs 9: 4.043 A
+    tmpl 8 vs 9: 4.889 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.3402   p = 0.0004
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq16_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq16_allatom_approachB_results.txt
+  Done.
+
+============================================================
+  Approach B | Sequence: SEQ17 | Mode: ALLATOM
+============================================================
+
+[1/4] Loading template structures ...
+  Loaded 10 templates
+
+[2/4] Loading sample structures ...
+  Cluster 0: 2 samples
+  Cluster 1: 2 samples
+  Cluster 2: 2 samples
+  Cluster 3: 2 samples
+  Cluster 4: 2 samples
+  Cluster 5: 2 samples
+  Cluster 6: 2 samples
+  Cluster 7: 2 samples
+  Cluster 8: 2 samples
+  Cluster 9: 2 samples
+
+[3/4] Computing RMSD matrices ...
+  Building 10x10 template matrix (allatom) ...
+    tmpl 0 vs 1: 6.008 A
+    tmpl 0 vs 2: 3.565 A
+    tmpl 0 vs 3: 4.140 A
+    tmpl 0 vs 4: 3.465 A
+    tmpl 0 vs 5: 3.857 A
+    tmpl 0 vs 6: 4.225 A
+    tmpl 0 vs 7: 3.435 A
+    tmpl 0 vs 8: 3.364 A
+    tmpl 0 vs 9: 4.246 A
+    tmpl 1 vs 2: 5.625 A
+    tmpl 1 vs 3: 5.080 A
+    tmpl 1 vs 4: 5.938 A
+    tmpl 1 vs 5: 6.652 A
+    tmpl 1 vs 6: 4.802 A
+    tmpl 1 vs 7: 6.683 A
+    tmpl 1 vs 8: 5.684 A
+    tmpl 1 vs 9: 4.850 A
+    tmpl 2 vs 3: 3.844 A
+    tmpl 2 vs 4: 2.916 A
+    tmpl 2 vs 5: 3.943 A
+    tmpl 2 vs 6: 3.416 A
+    tmpl 2 vs 7: 3.968 A
+    tmpl 2 vs 8: 3.524 A
+    tmpl 2 vs 9: 3.835 A
+    tmpl 3 vs 4: 3.748 A
+    tmpl 3 vs 5: 5.006 A
+    tmpl 3 vs 6: 4.168 A
+    tmpl 3 vs 7: 4.971 A
+    tmpl 3 vs 8: 3.599 A
+    tmpl 3 vs 9: 4.127 A
+    tmpl 4 vs 5: 4.052 A
+    tmpl 4 vs 6: 3.645 A
+    tmpl 4 vs 7: 3.645 A
+    tmpl 4 vs 8: 3.051 A
+    tmpl 4 vs 9: 4.045 A
+    tmpl 5 vs 6: 4.674 A
+    tmpl 5 vs 7: 4.004 A
+    tmpl 5 vs 8: 3.829 A
+    tmpl 5 vs 9: 5.090 A
+    tmpl 6 vs 7: 4.430 A
+    tmpl 6 vs 8: 3.988 A
+    tmpl 6 vs 9: 3.769 A
+    tmpl 7 vs 8: 3.819 A
+    tmpl 7 vs 9: 4.875 A
+    tmpl 8 vs 9: 4.371 A
+  Building 20x20 sample matrix (allatom) ...
+    190 pairs computed
+
+[4/4] Running Mantel test ...
+
+  r = 0.5752   p = 0.0001
+  Saved: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq17_allatom_approachB.png
+  Results saved to: /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD/mantel_seq17_allatom_approachB_results.txt
+  Done.

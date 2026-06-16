@@ -1,0 +1,16 @@
+#!/bin/bash --login
+#SBATCH --job-name=mantel_A
+#SBATCH --time=08:00:00
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=32G
+#SBATCH --output=/mnt/gs21/scratch/renaldse/AlphaFold3/logs/mantel_A_%j.out
+#SBATCH --error=/mnt/gs21/scratch/renaldse/AlphaFold3/logs/mantel_A_%j.err
+
+set -euo pipefail
+
+module purge
+module load Python/3.11.3-GCCcore-12.3.0
+
+cd /mnt/gs21/scratch/renaldse/AlphaFold3/RMSD
+
+python3 mantel_af3_approachA.py --mode allatom

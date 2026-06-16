@@ -1,0 +1,42 @@
+==> [task 12] pdb_id=OATP1B1
+==> template CIF: /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/seq7_apo_May26_2026_10.53AM/seq7/seed-407581729_sample-0/model.cif
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/OATP1B1_templated_apo_May26_2026_5.33PM.json
+==> running AF3 in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/OATP1B1_templated_apo_May26_2026_5.33PM
+Running AlphaFold 3. Please note that standard AlphaFold 3 model parameters are
+only available under terms of use provided at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+If you do not agree to these terms and are using AlphaFold 3 derived model
+parameters, cancel execution of AlphaFold 3 inference with CTRL-C, and do not
+use the model parameters.
+Found local devices: [CudaDevice(id=0)]
+Building model from scratch...
+Processing fold inputs.
+Processing fold input #1
+Processing fold input OATP1B1
+Checking we can load the model parameters...
+Running data pipeline...
+Processing chain A
+Processing chain A took 0.00 seconds
+Output directory: /root/af_output/OATP1B1_templated_apo_May26_2026_5.33PM/oatp1b1
+Writing model input JSON to /root/af_output/OATP1B1_templated_apo_May26_2026_5.33PM/oatp1b1
+Predicting 3D structure for OATP1B1 for seed(s) (1536018325, 1536018326)...
+Featurising data for seeds (1536018325, 1536018326)...
+Featurising OATP1B1 with rng_seed 1536018325.
+Featurising OATP1B1 with rng_seed 1536018325 took 7.32 seconds.
+Featurising OATP1B1 with rng_seed 1536018326.
+Featurising OATP1B1 with rng_seed 1536018326 took 7.31 seconds.
+Featurising data for seeds (1536018325, 1536018326) took  19.41 seconds.
+Running model inference for seed 1536018325...
+Running model inference for seed 1536018325 took  69.21 seconds.
+Extracting output structures (one per sample) for seed 1536018325...
+Extracting output structures (one per sample) for seed 1536018325 took  0.77 seconds.
+Running model inference and extracting output structures for seed 1536018325 took  69.99 seconds.
+Running model inference for seed 1536018326...
+Running model inference for seed 1536018326 took  37.51 seconds.
+Extracting output structures (one per sample) for seed 1536018326...
+Extracting output structures (one per sample) for seed 1536018326 took  0.93 seconds.
+Running model inference and extracting output structures for seed 1536018326 took  38.44 seconds.
+Running model inference and extracting output structures for seeds (1536018325, 1536018326) took  108.43 seconds.
+Writing outputs for OATP1B1 for seed(s) (1536018325, 1536018326)...
+Done processing fold input OATP1B1.
+Done processing 1 fold inputs.

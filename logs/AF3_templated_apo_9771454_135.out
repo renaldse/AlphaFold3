@@ -1,0 +1,42 @@
+==> [task 135] pdb_id=seq16_cluster4
+==> template CIF: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/structures/NODES_Proteins/seq16_cluster_repr_4.cif
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/seq16_cluster4_templated_apo_Jun11_2026_12.01.13PM_135.json
+==> running AF3 in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/seq16_cluster4_templated_apo_Jun11_2026_12.01.13PM_135
+Running AlphaFold 3. Please note that standard AlphaFold 3 model parameters are
+only available under terms of use provided at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+If you do not agree to these terms and are using AlphaFold 3 derived model
+parameters, cancel execution of AlphaFold 3 inference with CTRL-C, and do not
+use the model parameters.
+Found local devices: [CudaDevice(id=0)]
+Building model from scratch...
+Processing fold inputs.
+Processing fold input #1
+Processing fold input seq16_cluster4
+Checking we can load the model parameters...
+Running data pipeline...
+Processing chain A
+Processing chain A took 0.00 seconds
+Output directory: /root/af_output/seq16_cluster4_templated_apo_Jun11_2026_12.01.13PM_135/seq16_cluster4
+Writing model input JSON to /root/af_output/seq16_cluster4_templated_apo_Jun11_2026_12.01.13PM_135/seq16_cluster4
+Predicting 3D structure for seq16_cluster4 for seed(s) (729282033, 729282034)...
+Featurising data for seeds (729282033, 729282034)...
+Featurising seq16_cluster4 with rng_seed 729282033.
+Featurising seq16_cluster4 with rng_seed 729282033 took 2.36 seconds.
+Featurising seq16_cluster4 with rng_seed 729282034.
+Featurising seq16_cluster4 with rng_seed 729282034 took 2.33 seconds.
+Featurising data for seeds (729282033, 729282034) took  11.23 seconds.
+Running model inference for seed 729282033...
+Running model inference for seed 729282033 took  39.90 seconds.
+Extracting output structures (one per sample) for seed 729282033...
+Extracting output structures (one per sample) for seed 729282033 took  0.20 seconds.
+Running model inference and extracting output structures for seed 729282033 took  40.10 seconds.
+Running model inference for seed 729282034...
+Running model inference for seed 729282034 took  7.80 seconds.
+Extracting output structures (one per sample) for seed 729282034...
+Extracting output structures (one per sample) for seed 729282034 took  0.19 seconds.
+Running model inference and extracting output structures for seed 729282034 took  7.98 seconds.
+Running model inference and extracting output structures for seeds (729282033, 729282034) took  48.08 seconds.
+Writing outputs for seq16_cluster4 for seed(s) (729282033, 729282034)...
+Done processing fold input seq16_cluster4.
+Done processing 1 fold inputs.

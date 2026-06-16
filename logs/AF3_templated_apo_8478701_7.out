@@ -1,0 +1,4 @@
+==> [task 7] pdb_id=OATP1B1
+==> template CIF: /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/seq5_apo_May26_2026_10.53AM/seq5/seed-1984255282_sample-0/model.cif
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/OATP1B1_templated_apo_May26_2026_4.25PM.json
+==> running AF3 in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/OATP1B1_templated_apo_May26_2026_4.25PM

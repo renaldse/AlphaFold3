@@ -1,0 +1,3 @@
+==> [task 1] pdb_id=OATP1B1
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/OATP1B1_lig-b9544aa2_cofold_May21_2026_10.59AM.json
+==> running AF3 (expected 25 structures) in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/OATP1B1_lig-b9544aa2_cofold_May21_2026_10.59AM

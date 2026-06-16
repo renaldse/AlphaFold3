@@ -1,0 +1,42 @@
+==> [task 64] pdb_id=seq9_cluster3
+==> template CIF: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/structures/NODES_Proteins/seq9_cluster_repr_3.cif
+==> writing JSON: /mnt/gs21/scratch/renaldse/AlphaFold3/inputs/seq9_cluster3_templated_apo_Jun11_2026_11.12.37AM_64.json
+==> running AF3 in /mnt/gs21/scratch/renaldse/AlphaFold3/outputs/seq9_cluster3_templated_apo_Jun11_2026_11.12.37AM_64
+Running AlphaFold 3. Please note that standard AlphaFold 3 model parameters are
+only available under terms of use provided at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+If you do not agree to these terms and are using AlphaFold 3 derived model
+parameters, cancel execution of AlphaFold 3 inference with CTRL-C, and do not
+use the model parameters.
+Found local devices: [CudaDevice(id=0)]
+Building model from scratch...
+Processing fold inputs.
+Processing fold input #1
+Processing fold input seq9_cluster3
+Checking we can load the model parameters...
+Running data pipeline...
+Processing chain A
+Processing chain A took 0.00 seconds
+Output directory: /root/af_output/seq9_cluster3_templated_apo_Jun11_2026_11.12.37AM_64/seq9_cluster3
+Writing model input JSON to /root/af_output/seq9_cluster3_templated_apo_Jun11_2026_11.12.37AM_64/seq9_cluster3
+Predicting 3D structure for seq9_cluster3 for seed(s) (1097671793, 1097671794)...
+Featurising data for seeds (1097671793, 1097671794)...
+Featurising seq9_cluster3 with rng_seed 1097671793.
+Featurising seq9_cluster3 with rng_seed 1097671793 took 4.57 seconds.
+Featurising seq9_cluster3 with rng_seed 1097671794.
+Featurising seq9_cluster3 with rng_seed 1097671794 took 4.52 seconds.
+Featurising data for seeds (1097671793, 1097671794) took  25.70 seconds.
+Running model inference for seed 1097671793...
+Running model inference for seed 1097671793 took  53.00 seconds.
+Extracting output structures (one per sample) for seed 1097671793...
+Extracting output structures (one per sample) for seed 1097671793 took  0.39 seconds.
+Running model inference and extracting output structures for seed 1097671793 took  53.39 seconds.
+Running model inference for seed 1097671794...
+Running model inference for seed 1097671794 took  19.35 seconds.
+Extracting output structures (one per sample) for seed 1097671794...
+Extracting output structures (one per sample) for seed 1097671794 took  0.38 seconds.
+Running model inference and extracting output structures for seed 1097671794 took  19.74 seconds.
+Running model inference and extracting output structures for seeds (1097671793, 1097671794) took  73.13 seconds.
+Writing outputs for seq9_cluster3 for seed(s) (1097671793, 1097671794)...
+Done processing fold input seq9_cluster3.
+Done processing 1 fold inputs.

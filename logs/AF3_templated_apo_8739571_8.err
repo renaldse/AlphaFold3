@@ -1,0 +1,43 @@
+Template mapping for seq5_cluster7: used mmCIF label_seq_id numbering. Mapped 180 template residues to query length 180. Apparent missing/unmapped query residues: 0. Sequence agreement at mapped positions: 180/180 = 100.0%.
+I0601 10:18:48.634015 22774540701696 folding_input.py:1044] Detected /root/af_input/seq5_cluster7_templated_apo_Jun1_2026_10.18.43AM_8.json is an AlphaFold 3 JSON since the top-level is not a list.
+2026-06-01 10:18:49.193759: E external/xla/xla/stream_executor/cuda/cuda_driver.cc:152] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+Traceback (most recent call last):
+  File "/alphafold3_venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 885, in backends
+    backend = _init_backend(platform)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/alphafold3_venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 971, in _init_backend
+    backend = registration.factory()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/alphafold3_venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 671, in factory
+    return xla_client.make_c_api_client(plugin_name, updated_options, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/alphafold3_venv/lib/python3.11/site-packages/jaxlib/xla_client.py", line 200, in make_c_api_client
+    return _xla.get_c_api_client(plugin_name, options, distributed_client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jaxlib.xla_extension.XlaRuntimeError: FAILED_PRECONDITION: No visible GPU devices.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/af_code/alphafold3/run_alphafold.py", line 737, in <module>
+    app.run(main)
+  File "/alphafold3_venv/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/alphafold3_venv/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/root/af_code/alphafold3/run_alphafold.py", line 639, in main
+    gpu_devices = jax.local_devices(backend='gpu')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/alphafold3_venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 1141, in local_devices
+    process_index = get_backend(backend).process_index()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/alphafold3_venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 1017, in get_backend
+    return _get_backend_uncached(platform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/alphafold3_venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 996, in _get_backend_uncached
+    bs = backends()
+         ^^^^^^^^^^
+  File "/alphafold3_venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 901, in backends
+    raise RuntimeError(err_msg)
+RuntimeError: Unable to initialize backend 'cuda': FAILED_PRECONDITION: No visible GPU devices. (you may need to uninstall the failing plugin package, or set JAX_PLATFORMS=cpu to skip this backend.)
