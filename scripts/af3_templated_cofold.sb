@@ -519,3 +519,6 @@ singularity exec --nv \
     --db_dir /root/public_databases \
     --output_dir "/root/af_output/${job_tag}" \
     "${diffusion_args[@]}"
+
+echo "==> [${pdbid}] Ranking samples by confidence score..."
+python3 /mnt/gs21/scratch/renaldse/AlphaFold3/scripts/rank_samples.py "${out_host}/${pdbid}"

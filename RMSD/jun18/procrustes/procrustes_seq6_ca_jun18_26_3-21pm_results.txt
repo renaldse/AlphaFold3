@@ -1,0 +1,25 @@
+Procrustes Analysis Results
+Sequence          : SEQ6
+Mode              : CA
+Permutations      : 9999
+Tail              : lower
+                    (significant = outputs closer to own
+                     template than expected by chance)
+
+mean self-disparity = 0.941076
+null mean           = 0.945757
+null std            = 0.004472
+p                   = 0.150600
+z                   = -1.046653
+
+Per-cluster self-disparity (output vs own template):
+  cluster 0: disparity = 0.98009  seed = S1  ranking_score = 0.4600
+  cluster 1: disparity = 0.90908  seed = S1  ranking_score = 0.5500
+  cluster 2: disparity = 0.96830  seed = S2  ranking_score = 0.5000
+  cluster 3: disparity = 0.94758  seed = S2  ranking_score = 0.5200
+  cluster 4: disparity = 0.91846  seed = S2  ranking_score = 0.5100
+  cluster 5: disparity = 0.91233  seed = S1  ranking_score = 0.5500
+  cluster 6: disparity = 0.94870  seed = S1  ranking_score = 0.4900
+  cluster 7: disparity = 0.97165  seed = S1  ranking_score = 0.4700
+  cluster 8: disparity = 0.92497  seed = S2  ranking_score = 0.5500
+  cluster 9: disparity = 0.92961  seed = S1  ranking_score = 0.5500

@@ -7,7 +7,7 @@
 #SBATCH --mem=64G
 #SBATCH --output=/mnt/gs21/scratch/renaldse/AlphaFold3/logs/%x_%A_%a.out # CHANGE ME
 #SBATCH --error=/mnt/gs21/scratch/renaldse/AlphaFold3/logs/%x_%A_%a.err # CHANGE ME
-#SBATCH --array=1-1 # CHANGE ME
+#SBATCH --array=1-308 # CHANGE ME
 
 set -euo pipefail
 
@@ -30,7 +30,7 @@ export AF3_DATABASES_DIR=/mnt/research/common-data/alphafold/database_3
 mkdir -p "${AF3_INPUT_DIR}" "${AF3_OUTPUT_DIR}" "${AF3_SCRATCH_DIR}/logs" "${AF3_SCRATCH_DIR}/tmp"
 
 # Total structures per complex is AF3_NUM_SEEDS times AF3_NUM_SAMPLES_PER_SEED
-AF3_NUM_SEEDS="${AF3_NUM_SEEDS:-1}"
+AF3_NUM_SEEDS="${AF3_NUM_SEEDS:-2}"
 AF3_NUM_SAMPLES_PER_SEED="${AF3_NUM_SAMPLES_PER_SEED:-5}"
 
 # ---- sanity checks ----
@@ -247,7 +247,7 @@ idx = int(sys.argv[2])
 
 with open(path, newline='') as f:
     r = csv.DictReader(f)
-    need = {'pdb_id', 'smiles', 'sequence'}
+    need = {'pdb_id', 'smiles', 'protein_sequence'}
     if not r.fieldnames or (need - set(r.fieldnames)):
         raise SystemExit(f"CSV must have columns: {sorted(need)}; found: {r.fieldnames}")
 
@@ -255,7 +255,7 @@ with open(path, newline='') as f:
         if i == idx:
             pdbid = row['pdb_id'].strip()
             smiles = row['smiles'].strip()
-            seq = row['sequence'].strip()
+            seq = row['protein_sequence'].strip()
             if not pdbid:
                 raise SystemExit(f'Row {idx}: empty pdb_id')
             print(f'{pdbid}\t{smiles}\t{seq}')
@@ -322,3 +322,6 @@ if grep -q "KeyError: 'AAA'" "${AF3_STDERR}"; then
 fi
 
 exit 1
+
+echo "==> [${pdbid}] Ranking samples by confidence score..."
+python3 /mnt/gs21/scratch/renaldse/AlphaFold3/scripts/rank_samples.py "${out_host}/${pdbid}"

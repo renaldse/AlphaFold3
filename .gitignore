@@ -1,1 +1,19 @@
 outputs/
+# AF3 outputs and data
+outputs/
+tmp/
+logs/
+*.cif
+*.pdb
+*.sdf
+
+# Ignore all JSON in AlphaFold3/inputs except files with "af3" in the name
+inputs/*.json
+!inputs/*af3*.json
+
+# PoseBusters raw data (not yet ready to push)
+PoseBusters/posebusters_benchmark_set/
+PoseBusters/astex_diverse_set/
+PoseBusters/posebusters_308/
+PoseBusters/*.zip
+PoseBusters/*.sif

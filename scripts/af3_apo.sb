@@ -391,3 +391,6 @@ PY
 
 echo "==> [${pdbid}] Post-processing complete."
 exit 0
+
+echo "==> [${pdbid}] Ranking samples by confidence score..."
+python3 /mnt/gs21/scratch/renaldse/AlphaFold3/scripts/rank_samples.py "${out_host}/${pdbid}"
